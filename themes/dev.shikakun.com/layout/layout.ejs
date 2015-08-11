@@ -68,14 +68,13 @@
         </header>
         <div class="outer">
           <section id="main"><%- body %></section>
-          <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
-            <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
-          <% } %>
         </div>
         <footer id="footer">
-          <% if (theme.sidebar === 'bottom'){ %>
-            <%- partial('_partial/sidebar') %>
-          <% } %>
+          <aside id="sidebar"<% if (theme.sidebar === 'bottom'){ %> class="outer"<% } %>>
+            <% theme.widgets.forEach(function(widget){ %>
+              <%- partial('_widget/' + widget) %>
+            <% }) %>
+          </aside>
           <div class="outer">
             <div id="footer-info" class="inner">
               &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %><br>
@@ -84,7 +83,6 @@
           </div>
         </footer>
       </div>
-      <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
       <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
       <%- js('js/script') %>
     </div>
