@@ -1,11 +1,14 @@
 {
-  "name": "hexo-site",
+  "name": "dev.shikakun.com",
   "version": "0.0.0",
   "private": true,
   "hexo": {
     "version": "3.1.1"
   },
   "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-pleeease": "^1.2.0",
+    "gulp-sass": "^2.0.4",
     "hexo": "^3.1.0",
     "hexo-deployer-git": "0.0.4",
     "hexo-generator-archive": "^0.1.2",
