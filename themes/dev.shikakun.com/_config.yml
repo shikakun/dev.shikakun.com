@@ -4,11 +4,7 @@ menu:
   Archives: /archives
 rss: /atom.xml
 
-# Content
-excerpt_link: Read More
-
-# Sidebar
-sidebar: right
+# Widgets
 widgets:
 - category
 - tag

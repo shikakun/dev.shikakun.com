@@ -83,7 +83,7 @@
           <section id="main"><%- body %></section>
         </div>
         <footer id="footer">
-          <aside id="sidebar"<% if (theme.sidebar === 'bottom'){ %> class="outer"<% } %>>
+          <aside id="sidebar" class="outer">
             <% theme.widgets.forEach(function(widget){ %>
               <%- partial('_widget/' + widget) %>
             <% }) %>
