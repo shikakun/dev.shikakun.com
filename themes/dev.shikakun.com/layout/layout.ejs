@@ -2,6 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width" name="viewport">
     <%
       var title = page.title;
       if (is_archive()){
@@ -41,33 +43,18 @@
     <% } %>
   </head>
   <body>
-    <div>
-      <div>
-        <header>
-          <div>
-            <div>
-              <h1>
-                <a href="<%- url_for() %>"><%= config.title %></a>
-              </h1>
-            </div>
-            <div>
-              <nav>
-                <% for (var i in theme.menu){ %>
-                  <a href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
-                <% } %>
-                <a href="<%- theme.rss %>">Feed</a>
-              </nav>
-            </div>
-          </div>
-        </header>
-        <div>
-          <section>
-            <%- body %>
-          </section>
-        </div>
-      </div>
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-      <%- js('js/script') %>
-    </div>
+    <header class="header">
+      <h1 class="header__nav header__nav--brand">
+        <a href="<%- url_for() %>"><%= config.title %></a>
+      </h1>
+      <nav class="header__nav header__nav--archive">
+        <a href="/archives/">Archives</a>
+      </nav>
+    </header>
+    <section>
+      <%- body %>
+    </section>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <%- js('js/script') %>
   </body>
 </html>

@@ -1,7 +1,8 @@
 <article class="article" id="<%= post.layout %>-<%= post.slug %>" itemscope itemprop="blogPost">
   <% if (post.link || post.title){ %>
-    <header class="article__heading">
-      <%- partial('post/title', {class_name: 'article-title'}) %>
+    <header class="article__header">
+      <%- partial('post/title', {class_name: 'article__heading'}) %>
+      <%- partial('post/date', {class_name: 'article__date', date_format: 'll'}) %>
     </header>
   <% } %>
   <div class="article__body" itemprop="articleBody">

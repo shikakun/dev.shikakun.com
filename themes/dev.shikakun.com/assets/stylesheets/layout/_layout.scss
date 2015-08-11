@@ -1,0 +1,23 @@
+.header {
+  .header__nav {
+    position: absolute;
+    top: 10px;
+    margin: 0;
+    @include if-desktop {
+      position: fixed;
+    }
+    &.header__nav--brand {
+      left: 10px;
+    }
+    &.header__nav--archive {
+      right: 10px;
+    }
+    a {
+      padding: 0 10px;
+      display: block;
+      color: $color-darkgrey;
+      font-weight: bold;
+      border: 3px solid $color-darkgrey;
+    }
+  }
+}
