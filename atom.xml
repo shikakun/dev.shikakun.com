@@ -5,7 +5,7 @@
   <subtitle><![CDATA[鹿]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://dev.shikakun.com//"/>
-  <updated>2015-08-11T06:34:53.000Z</updated>
+  <updated>2015-08-11T06:41:35.000Z</updated>
   <id>http://dev.shikakun.com//</id>
   
   <author>
@@ -20,8 +20,8 @@
     <link href="http://dev.shikakun.com/post/hexo-init/"/>
     <id>http://dev.shikakun.com/post/hexo-init/</id>
     <published>2015-08-11T05:19:23.000Z</published>
-    <updated>2015-08-11T06:34:53.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="capture_tips.png" alt=""></p>
+    <updated>2015-08-11T06:41:35.000Z</updated>
+    <content type="html"><![CDATA[<img src="/post/hexo-init/capture_tips.png" alt="capture_tips.png" title="">
 <p>これまで技術的に調べたことは、<a href="https://github.com/shikakun/tips/issues" target="_blank" rel="external">GitHub の Tips 専用リポジトリ</a> に issue に書いて公開していた。Markdown で書けるのはもちろん、画像のアップロードもドラック&amp;ドロップでできるし、コメント欄もタグの絞り込みも検索も用意されているので、ブログツールとしてなかなか便利だなーと思っていたんだけど、いいねボタンとかはてなスターとかリアクションがもらえないし、フィードもわかりやすく吐けないし、デザインもいろいろいじってみたいな！と思い、よしブログを作ろうと思ったのでした。</p>
 <p>はてなブログ最高だし Tumblr という手もあったけど、この機会に前から興味があった静的サイトジェネレーターを使って GitHub Pages で公開してみようかなと思って <a href="https://staticsitegenerators.net/" target="_blank" rel="external">いろいろ調べてみると</a>、npm でインストールできる <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a> というツールが現在の仕事で扱ってる技術に近そうだなーと思い、あと GitHub Flavored Markdown で書けるので、いっちょ Hexo でブログを作ってみることにしました。</p>
 <h2 id="インストールする">インストールする</h2><p>とりあえず GitHub でブログ用のリポジトリを作るところからやります！</p>
@@ -54,33 +54,11 @@
 <li><a href="https://github.com/shikakun/dev.shikakun.com/pull/5/files" target="_blank" rel="external">edit config by shikakun · Pull Request #5 · shikakun/dev.shikakun.com</a></li>
 </ul>
 <p>というわけでブログできた！やった──────────！</p>
-<p><img src="capture_dev.png" alt=""></p>
+<img src="/post/hexo-init/capture_dev.png" alt="capture_dev.png" title="">
 ]]></content>
     <summary type="html">
-    <![CDATA[<p><img src="capture_tips.png" alt=""></p>
-<p>これまで技術的に調べたことは、<a href="https://github.com/shikakun/tips/issues" target="_blank" rel="external]]>
-    </summary>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <link href="http://dev.shikakun.com/post/hello-world/"/>
-    <id>http://dev.shikakun.com/post/hello-world/</id>
-    <published>2015-08-11T03:08:53.000Z</published>
-    <updated>2015-08-11T03:08:53.000Z</updated>
-    <content type="html"><![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io]]>
+    <![CDATA[<img src="/post/hexo-init/capture_tips.png" alt="capture_tips.png" title="">
+<p>これまで技術的に調べたことは、<a href="https://github.com/shikakun/tips/iss]]>
     </summary>
     
   </entry>
