@@ -2,7 +2,7 @@ title: Hexo でブログをつくるまで
 date: 2015-08-11 14:19:23
 ---
 
-![](capture_tips.png)
+{% asset_img capture_tips.png %}
 
 これまで技術的に調べたことは、[GitHub の Tips 専用リポジトリ](https://github.com/shikakun/tips/issues) に issue に書いて公開していた。Markdown で書けるのはもちろん、画像のアップロードもドラック&ドロップでできるし、コメント欄もタグの絞り込みも検索も用意されているので、ブログツールとしてなかなか便利だなーと思っていたんだけど、いいねボタンとかはてなスターとかリアクションがもらえないし、フィードもわかりやすく吐けないし、デザインもいろいろいじってみたいな！と思い、よしブログを作ろうと思ったのでした。
 
@@ -95,4 +95,4 @@ $ npm install hexo-generator-feed --save
 
 というわけでブログできた！やった──────────！
 
-![](capture_dev.png)
+{% asset_img capture_dev.png %}
