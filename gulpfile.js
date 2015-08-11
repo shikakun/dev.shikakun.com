@@ -24,6 +24,12 @@ gulp.task('sass', function() {
     .pipe(gulp.dest(themeDir + 'source/stylesheets/'));
 });
 
+gulp.task('copy', function() {
+  gulp.src(themeDir + 'assets/**/*.{eot,otf,woff}')
+    .pipe(gulp.dest(themeDir + 'source/'));
+});
+
 gulp.task('default', function() {
   gulp.watch(themeDir + 'assets/stylesheets/**/*.scss', ['sass']);
+  gulp.watch(themeDir + 'assets/**/*.{eot,otf,woff}', ['copy']);
 });
