@@ -1,8 +1,24 @@
 // このスタイルシートは、文字に関するスタイルについて指定しています。
-@import url('//fonts.googleapis.com/css?family=Open+Sans:400,700');
-$font-family: 'Open Sans', sans-serif;
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  font-style: normal;
+  font-weight: 300;
+  src: url('/fonts/NotoSansJP-Regular.eot');
+  src: url('/fonts/NotoSansJP-Regular.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/NotoSansJP-Regular.woff') format('woff'),
+  url('/fonts/NotoSansJP-Regular.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/NotoSansJP-Bold.eot');
+  src: url('/fonts/NotoSansJP-Bold.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/NotoSansJP-Bold.woff') format('woff'),
+  url('/fonts/NotoSansJP-Bold.otf') format('opentype');
+}
+$font-family: 'Noto Sans Japanese', sans-serif;
 body {
-  color: #000;
   font-family: $font-family;
 }
 
