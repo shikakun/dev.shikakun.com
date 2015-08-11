@@ -1,15 +1,13 @@
-<article id="<%= post.layout %>-<%= post.slug %>" itemscope itemprop="blogPost">
-  <div>
-    <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
+<article class="article" id="<%= post.layout %>-<%= post.slug %>" itemscope itemprop="blogPost">
+  <% if (post.link || post.title){ %>
+    <header class="article__heading">
+      <%- partial('post/title', {class_name: 'article-title'}) %>
+    </header>
+  <% } %>
+  <div class="article__body" itemprop="articleBody">
+    <%- post.content %>
   </div>
-  <div>
-    <% if (post.link || post.title){ %>
-      <header>
-        <%- partial('post/title', {class_name: 'article-title'}) %>
-      </header>
-    <% } %>
-    <div itemprop="articleBody">
-      <%- post.content %>
-    </div>
+  <div class="article__meta">
+    <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
   </div>
 </article>
