@@ -1,0 +1,20 @@
+// このスタイルシートは、normalize.css を読み込んだうえで、
+// 使用しないブラウザのデフォルトのスタイルの指定を無効にしています。
+body {
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+ol, ul {
+  padding: 0;
+  list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+input::-ms-clear,
+input::-ms-reveal,
+select::-ms-expand {
+  display: none;
+}

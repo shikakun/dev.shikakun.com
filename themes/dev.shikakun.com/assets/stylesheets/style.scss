@@ -1,4 +1,7 @@
-$example-color: #ff009a;
-body {
-  background: $example-color;
-}
+@import 'foundation/vendor/normalize';
+@import 'foundation/reset';
+@import 'foundation/color';
+@import 'foundation/typography';
+@import 'foundation/mixin/clearfix';
+@import 'foundation/mixin/mediaquery';
+@import 'object/utility/mediaquery';
