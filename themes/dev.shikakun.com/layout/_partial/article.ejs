@@ -1,20 +1,20 @@
-<article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
-  <div class="article-meta">
+<article id="<%= post.layout %>-<%= post.slug %>" itemscope itemprop="blogPost">
+  <div>
     <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
     <%- partial('post/category') %>
   </div>
-  <div class="article-inner">
+  <div>
     <%- partial('post/gallery') %>
     <% if (post.link || post.title){ %>
-      <header class="article-header">
+      <header>
         <%- partial('post/title', {class_name: 'article-title'}) %>
       </header>
     <% } %>
-    <div class="article-entry" itemprop="articleBody">
+    <div itemprop="articleBody">
       <% if (post.excerpt && index){ %>
         <%- post.excerpt %>
         <% if (theme.excerpt_link){ %>
-          <p class="article-more-link">
+          <p>
             <a href="<%- url_for(post.path) %>#more">Read More</a>
           </p>
         <% } %>
@@ -22,8 +22,7 @@
         <%- post.content %>
       <% } %>
     </div>
-    <footer class="article-footer">
-      <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link">Share</a>
+    <footer>
       <%- partial('post/tag') %>
     </footer>
   </div>
