@@ -151,6 +151,9 @@
         }
       }
     }
+    code {
+      word-break: break-all;
+    }
     blockquote {
       padding: 2em;
       margin: 2em 0;
