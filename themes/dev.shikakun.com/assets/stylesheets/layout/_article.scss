@@ -8,12 +8,9 @@
     padding: 0;
     margin: 0 auto;
   }
-  img {
-    max-width: 100%;
-    display: block;
-  }
-  figure {
-    margin: 20px 0;
+  & + .article {
+    margin-top: 80px;
+    border-top: 4px solid $color-darkgrey;
   }
   .article__header {
     padding: 80px 0;
@@ -30,6 +27,104 @@
     .article__date {
       font-size: $font-size-14px;
       line-height: 1;
+    }
+  }
+  .article__body {
+    h1 {
+      margin: 4em 0 2em;
+      font-size: $font-size-24px;
+      font-weight: bold;
+    }
+    h2 {
+      margin: 4em 0 2em;
+      font-size: $font-size-20px;
+      font-weight: bold;
+      border-bottom: 1px solid rgba($color-darkgrey, 0.2);
+    }
+    h3 {
+      margin: 2em 0 1em;
+      font-size: $font-size-18px;
+      font-weight: bold;
+    }
+    h4 {
+      margin: 2em 0 1em;
+      font-size: $font-size-16px;
+      font-weight: bold;
+    }
+    h5 {
+      margin: 1em 0;
+      font-size: $font-size-16px;
+      font-weight: bold;
+      color: $color-grey;
+    }
+    h6 {
+      margin: 1em 0;
+      font-size: $font-size-16px;
+      color: $color-grey;
+    }
+    img {
+      max-width: 100%;
+      display: block;
+    }
+    ul,
+    ol {
+      padding: 0 0 0 2em;
+    }
+    ul {
+      li {
+        list-style-type: disc;
+        ul {
+          li {
+            list-style-type: circle;
+          }
+        }
+        ol {
+          li {
+            list-style-type: decimal;
+          }
+        }
+      }
+    }
+    ol {
+      li {
+        list-style-type: decimal;
+        ul {
+          li {
+            list-style-type: circle;
+          }
+        }
+      }
+    }
+    table {
+      max-width: 100%;
+      border-collapse: collapse;
+      border: 1px solid rgba($color-darkgrey, 0.2);
+      th,
+      td {
+        padding: 0.5em 1em;
+        font-size: $font-size-14px;
+        line-height: 1.66;
+        border: 1px solid rgba($color-darkgrey, 0.2);
+      }
+      th {
+        text-align: center;
+        font-weight: bold;
+      }
+    }
+    figure {
+      margin: 1em 0;
+      table {
+        border: 0;
+        th,
+        td {
+          border: 0;
+        }
+      }
+    }
+    blockquote {
+      padding: 2em;
+      margin: 2em 0;
+      border: 1px solid rgba($color-darkgrey, 0.2);
     }
   }
 }
