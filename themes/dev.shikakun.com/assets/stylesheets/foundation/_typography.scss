@@ -1,0 +1,98 @@
+// このスタイルシートは、文字に関するスタイルについて指定しています。
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  font-style: normal;
+  font-weight: 300;
+  src: url('/fonts/NotoSansJP-Regular.eot');
+  src: url('/fonts/NotoSansJP-Regular.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/NotoSansJP-Regular.woff') format('woff'),
+  url('/fonts/NotoSansJP-Regular.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/NotoSansJP-Bold.eot');
+  src: url('/fonts/NotoSansJP-Bold.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/NotoSansJP-Bold.woff') format('woff'),
+  url('/fonts/NotoSansJP-Bold.otf') format('opentype');
+}
+$font-family: 'Noto Sans Japanese', sans-serif;
+body {
+  font-family: $font-family;
+}
+
+$font-size-origin: 14px;
+$font-size-10px: (10px / $font-size-origin * 1rem);
+$font-size-11px: (11px / $font-size-origin * 1rem);
+$font-size-12px: (12px / $font-size-origin * 1rem);
+$font-size-13px: (13px / $font-size-origin * 1rem);
+$font-size-14px: (14px / $font-size-origin * 1rem);
+$font-size-15px: (15px / $font-size-origin * 1rem);
+$font-size-16px: (16px / $font-size-origin * 1rem);
+$font-size-17px: (17px / $font-size-origin * 1rem);
+$font-size-18px: (18px / $font-size-origin * 1rem);
+$font-size-19px: (19px / $font-size-origin * 1rem);
+$font-size-20px: (20px / $font-size-origin * 1rem);
+$font-size-21px: (21px / $font-size-origin * 1rem);
+$font-size-22px: (22px / $font-size-origin * 1rem);
+$font-size-23px: (23px / $font-size-origin * 1rem);
+$font-size-24px: (24px / $font-size-origin * 1rem);
+$font-size-25px: (25px / $font-size-origin * 1rem);
+$font-size-26px: (26px / $font-size-origin * 1rem);
+$font-size-27px: (27px / $font-size-origin * 1rem);
+$font-size-28px: (28px / $font-size-origin * 1rem);
+$font-size-29px: (29px / $font-size-origin * 1rem);
+$font-size-30px: (30px / $font-size-origin * 1rem);
+$font-size-31px: (31px / $font-size-origin * 1rem);
+$font-size-32px: (32px / $font-size-origin * 1rem);
+$font-size-33px: (33px / $font-size-origin * 1rem);
+$font-size-34px: (34px / $font-size-origin * 1rem);
+$font-size-35px: (35px / $font-size-origin * 1rem);
+$font-size-36px: (36px / $font-size-origin * 1rem);
+$font-size-37px: (37px / $font-size-origin * 1rem);
+$font-size-38px: (38px / $font-size-origin * 1rem);
+$font-size-39px: (39px / $font-size-origin * 1rem);
+$font-size-40px: (40px / $font-size-origin * 1rem);
+$font-size-41px: (41px / $font-size-origin * 1rem);
+$font-size-42px: (42px / $font-size-origin * 1rem);
+$font-size-43px: (43px / $font-size-origin * 1rem);
+$font-size-44px: (44px / $font-size-origin * 1rem);
+$font-size-45px: (45px / $font-size-origin * 1rem);
+$font-size-46px: (46px / $font-size-origin * 1rem);
+$font-size-47px: (47px / $font-size-origin * 1rem);
+$font-size-48px: (48px / $font-size-origin * 1rem);
+$font-size-49px: (49px / $font-size-origin * 1rem);
+$font-size-50px: (50px / $font-size-origin * 1rem);
+$font-size-51px: (51px / $font-size-origin * 1rem);
+$font-size-52px: (52px / $font-size-origin * 1rem);
+$font-size-53px: (53px / $font-size-origin * 1rem);
+$font-size-54px: (54px / $font-size-origin * 1rem);
+$font-size-55px: (55px / $font-size-origin * 1rem);
+$font-size-56px: (56px / $font-size-origin * 1rem);
+$font-size-57px: (57px / $font-size-origin * 1rem);
+$font-size-58px: (58px / $font-size-origin * 1rem);
+$font-size-59px: (59px / $font-size-origin * 1rem);
+$font-size-60px: (60px / $font-size-origin * 1rem);
+$font-size-61px: (61px / $font-size-origin * 1rem);
+$font-size-62px: (62px / $font-size-origin * 1rem);
+$font-size-63px: (63px / $font-size-origin * 1rem);
+$font-size-64px: (64px / $font-size-origin * 1rem);
+$font-size-65px: (65px / $font-size-origin * 1rem);
+$font-size-66px: (66px / $font-size-origin * 1rem);
+$font-size-67px: (67px / $font-size-origin * 1rem);
+$font-size-68px: (68px / $font-size-origin * 1rem);
+$font-size-69px: (69px / $font-size-origin * 1rem);
+$font-size-70px: (70px / $font-size-origin * 1rem);
+$font-size-71px: (71px / $font-size-origin * 1rem);
+$font-size-72px: (72px / $font-size-origin * 1rem);
+html {
+  font-size: $font-size-origin;
+}
+body,
+h1, h2, h3, h4, h5, h6 {
+  font-size: $font-size-14px;
+  @include if-desktop {
+    font-size: $font-size-16px;
+  }
+}

@@ -13,8 +13,6 @@ CSS 天国を実現するためには、どのような共通のスタイルシ�
 
 * [スタイルガイドについて調べた · Issue #72 · shikakun/tips](https://github.com/shikakun/tips/issues/72)
 
-----
-
 ## Hologram を使ってみよう
 
 それでは Hologram でスタイルガイドを作ってみましょう！
@@ -89,13 +87,7 @@ category: button
 * Hologramでカスタムスタイルガイド
   * https://github.com/codegrid/hologram
 
-----
-
-このサンプルプロジェクトの Hologram は、実は Markdown をパースするところもカスタマイズしています。
-詳しくは <a href="https://github.com/shikakun/styleguide/blob/master/hologram_files/markdown_renderer.rb"><code>hologram_files/markdown_renderer.rb</code></a> を参照ください。
-Hologram はカスタマイズ性が高いので、自分の好きなように表示できてめっちゃ楽しいです。
-
-----
+<blockquote>このサンプルプロジェクトの Hologram は、実は Markdown をパースするところもカスタマイズしています。<br>詳しくは <a href="https://github.com/shikakun/styleguide/blob/master/hologram_files/markdown_renderer.rb"><code>hologram_files/markdown_renderer.rb</code></a> を参照ください。<br>Hologram はカスタマイズ性が高いので、自分の好きなように表示できてめっちゃ楽しいです。</blockquote>
 
 実際にスタイルガイドを書きながらスタイルシートを書いていると、いつも誰かに説明を迫られているような気がして、scss の長い入れ子を分割したり、どうしてこのように書いているのかをまめにコメントするようになって、あとから自分で見返したときもわかりやすくなって良いなと思います。
 

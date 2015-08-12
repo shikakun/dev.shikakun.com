@@ -1,0 +1,16 @@
+/*
+clearfix を指定したいときに使用する mixin です。
+
+```example
+.example {
+  @include clearfix;
+  div {
+    float: left;
+  }
+}
+```
+
+*/
+@mixin clearfix {
+  overflow: hidden;
+}

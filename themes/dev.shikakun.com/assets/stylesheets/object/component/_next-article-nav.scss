@@ -1,0 +1,27 @@
+.next-article-nav {
+  border-top: 1px solid $color-lightgrey;
+  a {
+    padding: 40px 0;
+    color: $color-darkgrey;
+    display: block;
+  }
+}
+.next-article-nav__label {
+  margin: 0 0 0.5em;
+  text-align: center;
+  display: block;
+  font-size: $font-size-14px;
+  line-height: 1;
+}
+.next-article-nav__heading {
+  padding: 0 0 36px;
+  text-align: center;
+  display: block;
+  font-size: $font-size-18px;
+  font-weight: bold;
+  line-height: 1.66;
+  background-image: url(/images/chevron-small-down.svg);
+  background-size: 36px 36px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}

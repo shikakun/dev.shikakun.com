@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width" name="viewport">
+    <%
+      var title = page.title;
+      if (is_archive()){
+        title = 'Archives';
+        if (is_month()){
+          title += ': ' + page.year + '/' + page.month;
+        } else if (is_year()){
+          title += ': ' + page.year;
+        }
+      } else if (is_category()){
+        title = 'Category: ' + page.category;
+      } else if (is_tag()){
+        title = 'Tag: ' + page.tag;
+      }
+    %>
+    <title><% if (title){ %><%= title %> · <% } %><%= config.title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <%- open_graph({twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
+    <% if (theme.rss){ %>
+      <link rel="alternative" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
+    <% } %>
+    <% if (theme.favicon){ %>
+      <link rel="icon" href="<%- theme.favicon %>">
+    <% } %>
+    <%- css('stylesheets/style') %>
+    <% if (theme.google_analytics){ %>
+      <!-- Google Analytics -->
+      <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', '<%= theme.google_analytics %>', 'auto');
+      ga('send', 'pageview');
+      </script>
+      <!-- End Google Analytics -->
+    <% } %>
+  </head>
+  <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.4";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <script type="text/javascript" src="//media.line.me/js/line-button.js?v=20140411"></script>
+    <header class="header">
+      <h1 class="header__nav header__nav--brand">
+        <a href="<%- url_for() %>"><%= config.title %></a>
+      </h1>
+      <nav class="header__nav header__nav--archive">
+        <a href="/archives/">Archives</a>
+      </nav>
+    </header>
+    <div class="page" id="page">
+      <%- body %>
+    </div>
+    <footer class="footer">
+      <ul class="footer__account">
+        <li class="footer__account-list footer__account-list--twitter">
+          <a href="https://twitter.com/shikakun" target="_blank">
+            Twitter
+          </a>
+        </li>
+        <li class="footer__account-list footer__account-list--github">
+          <a href="https://github.com/shikakun" target="_blank">
+            GitHub
+          </a>
+        </li>
+      </ul>
+      <a class="footer__pagetop" href="#page"></a>
+    </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <%- js('javascripts/script') %>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    <script type="text/javascript" src="//apis.google.com/js/plusone.js" async="async"></script>
+    <script type="text/javascript" src="//b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+  </body>
+</html>

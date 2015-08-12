@@ -1,0 +1,12 @@
+<% if (post.next){ %>
+  <div class="next-article-nav">
+    <a href="<%- url_for(post.next.path) %>">
+      <span class="next-article-nav__label">
+        次の記事
+      </span>
+      <span class="next-article-nav__heading">
+        <%= post.next.title %>
+      </span>
+    </a>
+  </div>
+<% } %>

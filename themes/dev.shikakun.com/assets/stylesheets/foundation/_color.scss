@@ -1,0 +1,18 @@
+// このスタイルシートは、色に関するスタイルについて指定しています。
+$color-white: #fff;
+$color-black: #000;
+$color-grey: #607d8b;
+$color-lightgrey: #cfd8dc;
+$color-darkgrey: #424242;
+$color-link: #2169f3;
+$color-brand-twitter: #55acee;
+$color-brand-facebook: #305097;
+$color-brand-line: #00c300;
+
+// 各 HTML 要素のデフォルトの色を指定しています。
+body {
+  color: $color-darkgrey;
+}
+a {
+  color: $color-link;
+}

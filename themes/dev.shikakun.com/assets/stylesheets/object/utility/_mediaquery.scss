@@ -1,0 +1,58 @@
+/*
+ブラウザの幅によって表示を切り替えるときに使う utility です。
+
+* if-phone-show
+  * スマホのときは表示する
+* if-phone-hide
+  * スマホのときは隠す
+* if-desktop-show
+  * PC のときは表示する
+* if-desktop-hide
+  * PC のときは隠す
+
+例えば、以下のように書くと
+
+```example
+<p>
+  サンプル1
+</p>
+<p class="if-phone-show">
+  サンプル2
+</p>
+<p class="if-phone-hide">
+  サンプル3
+</p>
+```
+
+スマホから見たときは「サンプル1」と「サンプル2」が表示され、
+PC から見たときは「サンプル1」と「サンプル3」が表示されます。
+
+また、これらの class を inline 要素に使用したいときは、 .if-inline を指定します。
+
+*/
+.if-phone-show,
+.if-desktop-show {
+  display: none !important;
+}
+@include if-phone {
+  .if-phone-hide {
+    display: none !important;
+  }
+  .if-phone-show {
+    display: block !important;
+    &.if-inline {
+      display: inline !important;
+    }
+  }
+}
+@include if-desktop {
+  .if-desktop-hide {
+    display: none !important;
+  }
+  .if-desktop-show {
+    display: block !important;
+    &.if-inline {
+      display: inline !important;
+    }
+  }
+}
