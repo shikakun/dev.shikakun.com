@@ -19,7 +19,7 @@
         title = 'Tag: ' + page.tag;
       }
     %>
-    <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
+    <title><% if (title){ %><%= title %> · <% } %><%= config.title %></title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <%- open_graph({twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
     <% if (theme.rss){ %>
@@ -60,9 +60,24 @@
         <a href="/archives/">Archives</a>
       </nav>
     </header>
-    <section>
+    <div class="page" id="page">
       <%- body %>
-    </section>
+    </div>
+    <footer class="footer">
+      <ul class="footer__account">
+        <li class="footer__account-list footer__account-list--twitter">
+          <a href="https://twitter.com/shikakun" target="_blank">
+            Twitter
+          </a>
+        </li>
+        <li class="footer__account-list footer__account-list--github">
+          <a href="https://github.com/shikakun" target="_blank">
+            GitHub
+          </a>
+        </li>
+      </ul>
+      <a class="footer__pagetop" href="#page"></a>
+    </footer>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <%- js('js/script') %>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>

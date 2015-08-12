@@ -1,22 +1,12 @@
-<% if (post.prev || post.next){ %>
-  <nav>
-    <% if (post.prev){ %>
-      <a href="<%- url_for(post.prev.path) %>">
-        <strong>Newer</strong>
-        <div>
-          <% if (post.prev.title){ %>
-            <%= post.prev.title %>
-          <% } else { %>
-            (no title)
-          <% } %>
-        </div>
-      </a>
-    <% } %>
-    <% if (post.next){ %>
-      <a href="<%- url_for(post.next.path) %>">
-        <strong>Older</strong>
-        <div><%= post.next.title %></div>
-      </a>
-    <% } %>
-  </nav>
+<% if (post.next){ %>
+  <div class="next-article-nav">
+    <a href="<%- url_for(post.next.path) %>">
+      <span class="next-article-nav__label">
+        次の記事
+      </span>
+      <span class="next-article-nav__heading">
+        <%= post.next.title %>
+      </span>
+    </a>
+  </div>
 <% } %>

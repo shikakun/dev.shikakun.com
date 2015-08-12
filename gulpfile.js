@@ -25,11 +25,11 @@ gulp.task('sass', function() {
 });
 
 gulp.task('copy', function() {
-  gulp.src(themeDir + 'assets/**/*.{eot,otf,woff}')
+  gulp.src(themeDir + 'assets/**/*.{eot,otf,svg,woff}')
     .pipe(gulp.dest(themeDir + 'source/'));
 });
 
 gulp.task('default', function() {
   gulp.watch(themeDir + 'assets/stylesheets/**/*.scss', ['sass']);
-  gulp.watch(themeDir + 'assets/**/*.{eot,otf,woff}', ['copy']);
+  gulp.watch(themeDir + 'assets/**/*.{eot,otf,svg,woff}', ['copy']);
 });

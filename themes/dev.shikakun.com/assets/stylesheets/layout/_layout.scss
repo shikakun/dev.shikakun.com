@@ -1,23 +1,78 @@
-.header {
-  .header__nav {
-    position: absolute;
-    top: 10px;
-    margin: 0;
-    @include if-desktop {
-      position: fixed;
-    }
-    &.header__nav--brand {
-      left: 10px;
-    }
-    &.header__nav--archive {
-      right: 10px;
-    }
-    a {
-      padding: 0 10px;
-      display: block;
-      color: $color-darkgrey;
-      font-weight: bold;
-      border: 3px solid $color-darkgrey;
-    }
+a {
+  opacity: 1;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  transition-property: opacity;
+  &:hover {
+    opacity: 0.5;
   }
+}
+.header {
+  position: relative;
+}
+.header__nav {
+  position: absolute;
+  top: 10px;
+  margin: 0;
+  @include if-desktop {
+    position: fixed;
+  }
+  &.header__nav--brand {
+    left: 10px;
+  }
+  &.header__nav--archive {
+    right: 10px;
+  }
+  a {
+    padding: 0 10px;
+    display: block;
+    color: $color-darkgrey;
+    font-weight: bold;
+    border: 3px solid $color-darkgrey;
+  }
+}
+.footer {
+  position: relative;
+  height: 80px;
+}
+.footer__account {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  height: 48px;
+  margin: 0;
+}
+.footer__account-list {
+  float: left;
+  position: relative;
+  width: 48px;
+  height: 48px;
+  a {
+    width: 100%;
+    height: 100%;
+    text-indent: 100%;
+    display: block;
+    overflow: hidden;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  &.footer__account-list--twitter a {
+    background-image: url(/images/twitter.svg);
+  }
+  &.footer__account-list--github a {
+    background-image: url(/images/github.svg);
+  }
+}
+.footer__pagetop {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 48px;
+  height: 48px;
+  display: block;
+  background-image: url(/images/chevron-small-up.svg);
+  background-size: 36px 36px;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
