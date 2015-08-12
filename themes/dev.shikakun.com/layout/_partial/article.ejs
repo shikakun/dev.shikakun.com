@@ -1,14 +1,16 @@
-<article class="article" id="<%= post.layout %>-<%= post.slug %>" itemscope itemprop="blogPost">
+<article class="article<% if (index){ %> article--no-margin<% } %>" id="<%= post.layout %>-<%= post.slug %>" itemscope itemprop="blogPost">
   <% if (post.link || post.title){ %>
     <header class="article__header">
       <%- partial('post/title', {class_name: 'article__heading'}) %>
       <%- partial('post/date', {class_name: 'article__date', date_format: 'll'}) %>
     </header>
   <% } %>
-  <div class="article__body" itemprop="articleBody">
-    <%- post.content %>
-  </div>
-  <div class="article__meta">
-    <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
-  </div>
+  <% if (!index){ %>
+    <div class="article__body" itemprop="articleBody">
+      <%- post.content %>
+    </div>
+    <div class="article__meta">
+      <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
+    </div>
+  <% } %>
 </article>

@@ -12,6 +12,9 @@
   & + .article {
     margin-top: 80px;
     border-top: 4px solid $color-darkgrey;
+    &.article--no-margin {
+      margin-top: 0;
+    }
   }
   .article__header {
     padding: 80px 0;
@@ -23,13 +26,14 @@
       @include if-desktop {
         font-size: $font-size-24px;
       }
-      a,
-      span {
+      a {
         display: inline-block;
         color: $color-darkgrey;
       }
     }
     .article__date {
+      display: inline-block;
+      color: $color-darkgrey;
       font-size: $font-size-12px;
       line-height: 1;
       @include if-desktop {
