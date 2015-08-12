@@ -5,7 +5,7 @@
   <subtitle><![CDATA[鹿]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://dev.shikakun.com//"/>
-  <updated>2015-08-12T01:06:40.000Z</updated>
+  <updated>2015-08-11T07:09:04.000Z</updated>
   <id>http://dev.shikakun.com//</id>
   
   <author>
@@ -14,95 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title><![CDATA[ウェブサービスの公式シェアボタン・ブランドロゴがダウンロードできる URL まとめ]]></title>
-    <link href="http://dev.shikakun.com/post/share-buttons-and-brand-assets/"/>
-    <id>http://dev.shikakun.com/post/share-buttons-and-brand-assets/</id>
-    <published>2015-08-12T00:16:42.000Z</published>
-    <updated>2015-08-12T01:06:40.000Z</updated>
-    <content type="html"><![CDATA[<table>
-<thead>
-<tr>
-<th>サービス</th>
-<th>シェアボタン</th>
-<th>ブランドロゴ</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Twitter</td>
-<td><a href="https://about.twitter.com/resources/buttons" target="_blank" rel="external">https://about.twitter.com/resources/buttons</a></td>
-<td><a href="https://about.twitter.com/company/brand-assets" target="_blank" rel="external">https://about.twitter.com/company/brand-assets</a></td>
-</tr>
-<tr>
-<td>Facebook</td>
-<td><a href="https://developers.facebook.com/docs/plugins/like-button" target="_blank" rel="external">https://developers.facebook.com/docs/plugins/like-button</a></td>
-<td><a href="https://www.facebookbrand.com/" target="_blank" rel="external">https://www.facebookbrand.com/</a></td>
-</tr>
-<tr>
-<td>Google+</td>
-<td><a href="https://developers.google.com/+/web/+1button/?hl=ja" target="_blank" rel="external">https://developers.google.com/+/web/+1button/?hl=ja</a></td>
-<td><a href="https://developers.google.com/+/branding-guidelines" target="_blank" rel="external">https://developers.google.com/+/branding-guidelines</a></td>
-</tr>
-<tr>
-<td>はてなブックマーク</td>
-<td><a href="http://b.hatena.ne.jp/guide/bbutton" target="_blank" rel="external">http://b.hatena.ne.jp/guide/bbutton</a></td>
-<td><a href="http://hatenacorp.jp/press/resource" target="_blank" rel="external">http://hatenacorp.jp/press/resource</a></td>
-</tr>
-<tr>
-<td>LINE</td>
-<td><a href="http://media.line.me/howto/ja/" target="_blank" rel="external">http://media.line.me/howto/ja/</a></td>
-<td><a href="http://media.line.me/howto/ja/" target="_blank" rel="external">http://media.line.me/howto/ja/</a></td>
-</tr>
-<tr>
-<td>Tumblr</td>
-<td><a href="https://www.tumblr.com/buttons" target="_blank" rel="external">https://www.tumblr.com/buttons</a></td>
-<td><a href="https://www.tumblr.com/logo?language=ja_JP" target="_blank" rel="external">https://www.tumblr.com/logo?language=ja_JP</a></td>
-</tr>
-<tr>
-<td>Instagram</td>
-<td><a href="https://instagram.com/accounts/badges/" target="_blank" rel="external">https://instagram.com/accounts/badges/</a></td>
-<td><a href="https://www.instagram-brand.com/" target="_blank" rel="external">https://www.instagram-brand.com/</a></td>
-</tr>
-<tr>
-<td>Feedly</td>
-<td><a href="http://www.feedly.com/factory.html" target="_blank" rel="external">http://www.feedly.com/factory.html</a></td>
-<td><a href="http://www.feedly.com/about.html" target="_blank" rel="external">http://www.feedly.com/about.html</a></td>
-</tr>
-<tr>
-<td>Pocket</td>
-<td><a href="http://getpocket.com/publisher/button" target="_blank" rel="external">http://getpocket.com/publisher/button</a></td>
-<td><a href="http://getpocket.com/blog/press/" target="_blank" rel="external">http://getpocket.com/blog/press/</a></td>
-</tr>
-<tr>
-<td>Sumally</td>
-<td><a href="https://sumally.com/about/buttons" target="_blank" rel="external">https://sumally.com/about/buttons</a></td>
-<td>-</td>
-</tr>
-</tbody>
-</table>
-<p>と、調べているうちにすごく便利なサイトを見つけてしまいました…。<br>ブランドカラーもまとまっていて便利だなぁ。</p>
-<ul>
-<li><a href="http://syncer.jp/brand-logos" target="_blank" rel="external">webサイトの公式ロゴ素材まとめ</a></li>
-</ul>
-]]></content>
-    <summary type="html">
-    <![CDATA[<table>
-<thead>
-<tr>
-<th>サービス</th>
-<th>シェアボタン</th>
-<th>ブランドロゴ</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Twitter</td>
-<td><a href="https://about.t]]>
-    </summary>
-    
-  </entry>
   
   <entry>
     <title><![CDATA[Hexo でブログをつくるまで]]></title>
