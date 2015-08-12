@@ -9,13 +9,14 @@ a {
 }
 .header {
   position: relative;
+  height: 20px;
 }
 .header__nav {
   position: absolute;
-  top: 10px;
+  top: 20px;
   margin: 0;
   @include if-desktop {
-    position: fixed;
+    top: 0;
   }
   &.header__nav--brand {
     left: 10px;
@@ -24,11 +25,11 @@ a {
     right: 10px;
   }
   a {
-    padding: 0 10px;
+    height: 40px;
     display: block;
     color: $color-darkgrey;
     font-weight: bold;
-    border: 3px solid $color-darkgrey;
+    line-height: 40px;
   }
 }
 .footer {
