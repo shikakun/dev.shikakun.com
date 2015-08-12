@@ -1,5 +1,5 @@
 <% page.posts.each(function(post){ %>
-  <%- partial('article', {post: post, index: index}) %>
+  <%- partial('article', {post: post}) %>
 <% }) %>
 <% if (page.total > 1){ %>
   <nav>
