@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  
-  <title>Hexo でブログをつくるまで | dev.shikakun.com</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="これまで技術的に調べたことは、GitHub の Tips 専用リポジトリ に issue に書いて公開していた。Markdown で書けるのはもちろん、画像のアップロードもドラック&amp;amp;ドロップでできるし、コメント欄もタグの絞り込みも検索も用意されているので、ブログツールとしてなかなか便利だなーと思っていたんだけど、いいねボタンとかはてなスターとかリアクションがもらえないし、フィードもわかりや">
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width" name="viewport">
+    
+    <title>Hexo でブログをつくるまで · dev.shikakun.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="これまで技術的に調べたことは、GitHub の Tips 専用リポジトリ に issue に書いて公開していた。Markdown で書けるのはもちろん、画像のアップロードもドラック&amp;amp;ドロップでできるし、コメント欄もタグの絞り込みも検索も用意されているので、ブログツールとしてなかなか便利だなーと思っていたんだけど、いいねボタンとかはてなスターとかリアクションがもらえないし、フィードもわかりや">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo でブログをつくるまで">
 <meta property="og:url" content="http://dev.shikakun.com/post/hexo-init/index.html">
@@ -13,82 +15,58 @@
 <meta property="og:description" content="これまで技術的に調べたことは、GitHub の Tips 専用リポジトリ に issue に書いて公開していた。Markdown で書けるのはもちろん、画像のアップロードもドラック&amp;amp;ドロップでできるし、コメント欄もタグの絞り込みも検索も用意されているので、ブログツールとしてなかなか便利だなーと思っていたんだけど、いいねボタンとかはてなスターとかリアクションがもらえないし、フィードもわかりや">
 <meta property="og:image" content="http://dev.shikakun.com/post/hexo-init/capture_tips.png">
 <meta property="og:image" content="http://dev.shikakun.com/post/hexo-init/capture_dev.png">
-<meta property="og:updated_time" content="2015-08-11T06:41:35.000Z">
+<meta property="og:updated_time" content="2015-08-11T07:09:04.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo でブログをつくるまで">
 <meta name="twitter:description" content="これまで技術的に調べたことは、GitHub の Tips 専用リポジトリ に issue に書いて公開していた。Markdown で書けるのはもちろん、画像のアップロードもドラック&amp;amp;ドロップでできるし、コメント欄もタグの絞り込みも検索も用意されているので、ブログツールとしてなかなか便利だなーと思っていたんだけど、いいねボタンとかはてなスターとかリアクションがもらえないし、フィードもわかりや">
-  
-    <link rel="alternative" href="/atom.xml" title="dev.shikakun.com" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
-  
-
-</head>
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">dev.shikakun.com</a>
+    
+      <link rel="alternative" href="/atom.xml" title="dev.shikakun.com" type="application/atom+xml">
+    
+    
+      <link rel="icon" href="/favicon.png">
+    
+    <link rel="stylesheet" href="/stylesheets/style.css" type="text/css">
+    
+  </head>
+  <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.4";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <script type="text/javascript" src="//media.line.me/js/line-button.js?v=20140411"></script>
+    <header class="header">
+      <h1 class="header__nav header__nav--brand">
+        <a href="/">dev.shikakun.com</a>
       </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">鹿</a>
-        </h2>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
+      <nav class="header__nav header__nav--archive">
+        <a href="/archives/">Archives</a>
       </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://dev.shikakun.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main"><article id="post-hexo-init" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/post/hexo-init/" class="article-date">
-  <time datetime="2015-08-11T05:19:23.000Z" itemprop="datePublished">2015-08-11</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
+    </header>
+    <div class="page" id="page">
+      <article class="article" id="post-hexo-init" itemscope itemprop="blogPost">
   
-    <h1 class="article-title" itemprop="name">
-      Hexo でブログをつくるまで
-    </h1>
-  
+    <header class="article__header">
+      
+  <h1 class="article__heading" itemprop="name">
+    <a href="/post/hexo-init/">Hexo でブログをつくるまで</a>
+  </h1>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
+
       
-        <img src="/post/hexo-init/capture_tips.png" alt="capture_tips.png" title="">
+  <a class="article__date" href="/post/hexo-init/">
+    <time datetime="2015-08-11T05:19:23.000Z" itemprop="datePublished">Aug 11, 2015</time>
+  </a>
+
+
+    </header>
+  
+  
+    <div class="article__body" itemprop="articleBody">
+      <img src="/post/hexo-init/capture_tips.png" alt="capture_tips.png" title="">
 <p>これまで技術的に調べたことは、<a href="https://github.com/shikakun/tips/issues" target="_blank" rel="external">GitHub の Tips 専用リポジトリ</a> に issue に書いて公開していた。Markdown で書けるのはもちろん、画像のアップロードもドラック&amp;ドロップでできるし、コメント欄もタグの絞り込みも検索も用意されているので、ブログツールとしてなかなか便利だなーと思っていたんだけど、いいねボタンとかはてなスターとかリアクションがもらえないし、フィードもわかりやすく吐けないし、デザインもいろいろいじってみたいな！と思い、よしブログを作ろうと思ったのでした。</p>
 <p>はてなブログ最高だし Tumblr という手もあったけど、この機会に前から興味があった静的サイトジェネレーターを使って GitHub Pages で公開してみようかなと思って <a href="https://staticsitegenerators.net/" target="_blank" rel="external">いろいろ調べてみると</a>、npm でインストールできる <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a> というツールが現在の仕事で扱ってる技術に近そうだなーと思い、あと GitHub Flavored Markdown で書けるので、いっちょ Hexo でブログを作ってみることにしました。</p>
 <h2 id="インストールする">インストールする</h2><p>とりあえず GitHub でブログ用のリポジトリを作るところからやります！</p>
@@ -96,25 +74,25 @@
 <li><a href="https://github.com/shikakun/dev.shikakun.com" target="_blank" rel="external">shikakun/dev.shikakun.com</a></li>
 </ul>
 <p>リポジトリを作ったら、Hexo のウェブサイトの Get started を見ながら以下のコマンドを叩いて Hexo をインストールしました。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br><span class="line">$ hexo init dev.shikakun.com</span><br><span class="line">$ <span class="built_in">cd</span> dev.shikakun.com</span><br><span class="line">$ npm install</span><br><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br><span class="line">$ hexo init dev.shikakun.com</span><br><span class="line">$ <span class="built_in">cd</span> dev.shikakun.com</span><br><span class="line">$ npm install</span><br><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 <p>これだけ！ローカルに Hexo のサーバーが立ち上がって、 <code><a href="http://0.0.0.0:4000/" target="_blank" rel="external">http://0.0.0.0:4000/</a></code> で見られるようになりました。<br>用意した GitHub のリポジトリをリモートリポジトリに登録しておきます。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add origin git@github.com:shikakun/dev.shikakun.com.git</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git remote add origin git@github.com:shikakun/dev.shikakun.com.git</span><br></pre></td></tr></table></figure>
 <h2 id="デプロイする">デプロイする</h2><p>とりあえず GitHub Pages にデプロイするところをやります！<br><a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Hexo の Deployment のドキュメント</a> を読むと、GitHub Pages へデプロイするには <a href="https://github.com/hexojs/hexo-deployer-git" target="_blank" rel="external">hexo-deployer-git</a> という Hexo のプラグインをインストールしろとあるので、インストールします。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 <p>Hexo の設定ファイルの <code>_config.yml</code> の Deploy の項目を以下のように編集します。</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">deploy:&#10;  type: git&#10;  repo: git@github.com:shikakun/dev.shikakun.com.git&#10;  branch: gh-pages&#10;  message: &#34;Updated: &#123;&#123; now(&#39;YYYY-MM-DD HH:mm:ss&#39;) &#125;&#125;&#34;</span><br></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">deploy:&#10;  type: git&#10;  repo: git@github.com:shikakun/dev.shikakun.com.git&#10;  branch: gh-pages&#10;  message: &#34;Updated: &#123;&#123; now(&#39;YYYY-MM-DD HH:mm:ss&#39;) &#125;&#125;&#34;</span><br></pre></td></tr></table></figure>
 <p>これだけ！</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy -g</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy -g</span><br></pre></td></tr></table></figure>
 <p>デプロイのコマンドを実行すると、Hexo が静的ファイルを生成したあと、<code>gh-pages</code> ブランチへ push して <code><a href="http://shikakun.github.io/dev.shikakun.com/" target="_blank" rel="external">http://shikakun.github.io/dev.shikakun.com/</a></code> で見られるようになりました。</p>
 <h2 id="独自ドメインを設定する">独自ドメインを設定する</h2><p><code><a href="http://shikakun.github.io/dev.shikakun.com/" target="_blank" rel="external">http://shikakun.github.io/dev.shikakun.com/</a></code> で見られるようにはなったけど、せっかくなので <code><a href="http://dev.shikakun.com/">http://dev.shikakun.com/</a></code> で見たい。というわけで、独自ドメインの設定をやります！</p>
 <p>まず、僕は <code>shikakun.com</code> をムームードメインで取得して管理しているため、ムームードメインの管理画面（ムームー DNS のカスタム設定画面）で以下のように入力しました。</p>
 <table><tr><th>サブドメイン</th><td>dev</td></tr><tr><th>種別</th><td>CNAME</td></tr><tr><th>内容</th><td>shikakun.github.io</td></tr></table>
 
 <p><a href="https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/" target="_blank" rel="external">GitHub Pages の独自ドメインを設定するドキュメント</a> を読むと、リポジトリに <code>CNAME</code> ってファイル名の独自ドメインを書いたファイルが置いてあれば良いみたい。<br>master ブランチのリポジトリ直下に <code>CNAME</code> ファイルを置いてしまうと Hexo のデプロイ先の <code>gh-pages</code> ブランチのファイルには含まれないため、記事のファイルを置いている <code>source</code> ディレクトリに置きます。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">echo</span> <span class="string">'dev.shikakun.com'</span> &gt; <span class="built_in">source</span>/CNAME</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">echo</span> <span class="string">'dev.shikakun.com'</span> &gt; <span class="built_in">source</span>/CNAME</span><br></pre></td></tr></table></figure>
 <p>これだけ！<code>hexo deploy -g</code> でデプロイすれば、<code><a href="http://dev.shikakun.com/">http://dev.shikakun.com/</a></code> で見られるようになった！やったー！</p>
 <h2 id="フィードを生成する">フィードを生成する</h2><p>Hexo ではデフォルトテンプレートのナビゲーションに「RSS Feed」ってリンクがあるくせに、標準ではフィードを生成してくれない。ということで、フィードを生成してくれる Hexo のプラグインを追加します。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure>
 <p>これだけ！<code>hexo deploy -g</code> でデプロイすれば、<code><a href="http://dev.shikakun.com/atom.xml">http://dev.shikakun.com/atom.xml</a></code> で見られるようになった！やったー！<br>フィードに含めるエントリー数とかは <a href="https://github.com/hexojs/hexo-generator-feed#options" target="_blank" rel="external">設定ファイル</a> で設定できるらしいです。</p>
 <h2 id="いろいろ設定する">いろいろ設定する</h2><p>だんだん書くのが疲れてきたので雑になりますが、いろいろ設定しました。<br>当たり前だけど Git で差分を管理できるのがいいですね！</p>
 <ul>
@@ -123,84 +101,62 @@
 <p>というわけでブログできた！やった──────────！</p>
 <img src="/post/hexo-init/capture_dev.png" alt="capture_dev.png" title="">
 
-      
     </div>
-    <footer class="article-footer">
-      <a data-url="http://dev.shikakun.com/post/hexo-init/" data-id="cid6wevyl0000e155wh13a82v" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
+  
+    <div class="share">
+      <ul class="share__list">
+        <li class="share__item share__item--twitter">
+          <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://dev.shikakun.com/post/hexo-init/" data-text="Hexo でブログをつくるまで" data-lang="ja">Tweet</a>
+        </li>
+        <li class="share__item share__item--facebook">
+          <div class="fb-like" data-href="http://dev.shikakun.com/post/hexo-init/" data-layout="box_count" data-action="like" data-show-faces="false" data-share="false"></div>
+        </li>
+        <li class="share__item share__item--google-plus">
+          <g:plusone size="tall" href="http://dev.shikakun.com/post/hexo-init/"></g:plusone>
+        </li>
+        <li class="share__item share__item--hatena-bookmark">
+          <a href="http://b.hatena.ne.jp/entry/http://dev.shikakun.com/post/hexo-init/" class="hatena-bookmark-button" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="//b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a>
+        </li>
+      </ul>
+    </div>
     
+  <div class="next-article-nav">
+    <a href="/post/styleguide-hologram/">
+      <span class="next-article-nav__label">
+        次の記事
+      </span>
+      <span class="next-article-nav__heading">
+        Hologram ではじめるスタイルガイド入門
+      </span>
+    </a>
+  </div>
+
+
   
 </article>
 
-</section>
-        
-          <aside id="sidebar">
-  
-    
-  
-    
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">August 2015</a><span class="archive-list-count">1</span></li></ul>
-    </div>
-  </div>
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recents</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/post/hexo-init/">Hexo でブログをつくるまで</a>
-          </li>
-        
+    </div>
+    <footer class="footer">
+      <ul class="footer__account">
+        <li class="footer__account-list footer__account-list--twitter">
+          <a href="https://twitter.com/shikakun" target="_blank">
+            Twitter
+          </a>
+        </li>
+        <li class="footer__account-list footer__account-list--github">
+          <a href="https://github.com/shikakun" target="_blank">
+            GitHub
+          </a>
+        </li>
       </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2015 鹿<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
-  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
-
-
-<script src="/js/script.js" type="text/javascript"></script>
-
-  </div>
-</body>
+      <a class="footer__pagetop" href="#page"></a>
+    </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="/javascripts/script.js" type="text/javascript"></script>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    <script type="text/javascript" src="//apis.google.com/js/plusone.js" async="async"></script>
+    <script type="text/javascript" src="//b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+  </body>
 </html>
