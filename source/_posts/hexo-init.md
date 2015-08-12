@@ -6,7 +6,7 @@ date: 2015-08-11 14:19:23
 
 これまで技術的に調べたことは、[GitHub の Tips 専用リポジトリ](https://github.com/shikakun/tips/issues) に issue に書いて公開していた。Markdown で書けるのはもちろん、画像のアップロードもドラック&ドロップでできるし、コメント欄もタグの絞り込みも検索も用意されているので、ブログツールとしてなかなか便利だなーと思っていたんだけど、いいねボタンとかはてなスターとかリアクションがもらえないし、フィードもわかりやすく吐けないし、デザインもいろいろいじってみたいな！と思い、よしブログを作ろうと思ったのでした。
 
-はてなブログ最高だし Tumblr という手もあったけど、この機会に前から興味があった静的サイトジェネレーターを使って GitHub Pages で公開してみようかなと思って [いろいろ調べてみると](https://staticsitegenerators.net/)、npm でインストールできる [Hexo](https://hexo.io/) というツールが現在の仕事で扱ってる技術に近そうだなーと思い、あと GitHub Flavored Markdown で書けるので、いっちょ Hexo でブログを作ってみることにしました。
+はてなブログ最高だし Tumblr という手もあったけど、この機会に前から興味があった静的サイトジェネレーターを使って GitHub Pages で公開してみようかなと思って [いろいろ調べてみると](https://staticsitegenerators.net/)、npm でインストールできる [Hexo](https://hexo.io/) というツールが [現在の仕事](http://pepabo.com/recruit2016/shikakun) で扱ってる技術に近そうだなーと思い、あと GitHub Flavored Markdown で書けるので、いっちょ Hexo でブログを作ってみることにしました。
 
 ## インストールする
 
@@ -96,3 +96,5 @@ $ npm install hexo-generator-feed --save
 というわけでブログできた！やった──────────！
 
 {% asset_img capture_dev.png %}
+
+デフォルトのテンプレートが宇宙感すごいのはなんでなのか。[自分の好きなようにカスタマイズ](https://github.com/shikakun/dev.shikakun.com/pull/7) して大満足です。
