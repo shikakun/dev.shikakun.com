@@ -1,0 +1,26 @@
+.share {
+  padding: 1em 0;
+  margin: 2em 0 0;
+  border-top: 1px solid $color-lightgrey;
+}
+.share__list {
+  height: 62px;
+  text-align: center;
+}
+.share__item {
+  display: inline-block;
+  list-style-type: none;
+  line-height: 1 !important;
+  &.share__item--twitter {
+    width: 67px + 10px;
+  }
+  &.share__item--facebook {
+    width: 69px + 10px;
+  }
+  &.share__item--google-plus {
+    width: 50px + 10px;
+  }
+  &.share__item--hatena-bookmark {
+    width: 80px;
+  }
+}
