@@ -1,12 +1,13 @@
 .article {
   padding: 20px;
-  text-align: justify;
+  text-align: left;
   font-size: $font-size-16px;
   line-height: 2;
   @include if-desktop {
     width: 720px;
     padding: 0;
     margin: 0 auto;
+    text-align: justify;
   }
   & + .article {
     margin-top: 80px;
@@ -16,8 +17,12 @@
     padding: 80px 0;
     text-align: center;
     .article__heading {
-      font-size: $font-size-24px;
+      font-size: $font-size-18px;
       font-weight: bold;
+      line-height: 1.66;
+      @include if-desktop {
+        font-size: $font-size-24px;
+      }
       a,
       span {
         display: inline-block;
@@ -25,21 +30,36 @@
       }
     }
     .article__date {
-      font-size: $font-size-14px;
+      font-size: $font-size-12px;
       line-height: 1;
+      @include if-desktop {
+        font-size: $font-size-14px;
+      }
     }
   }
   .article__body {
+    font-size: $font-size-14px;
+    @include if-desktop {
+      font-size: $font-size-16px;
+    }
     h1 {
-      margin: 4em 0 2em;
-      font-size: $font-size-24px;
+      margin: 2em 0 1em;
+      font-size: $font-size-18px;
       font-weight: bold;
+      @include if-desktop {
+        margin: 4em 0 2em;
+        font-size: $font-size-24px;
+      }
     }
     h2 {
-      margin: 4em 0 2em;
-      font-size: $font-size-20px;
+      margin: 2em 0 1em;
+      font-size: $font-size-18px;
       font-weight: bold;
-      border-bottom: 1px solid rgba($color-darkgrey, 0.2);
+      border-bottom: 1px solid $color-lightgrey;
+      @include if-desktop {
+        margin: 4em 0 2em;
+        font-size: $font-size-20px;
+      }
     }
     h3 {
       margin: 2em 0 1em;
@@ -69,6 +89,10 @@
     ul,
     ol {
       padding: 0 0 0 2em;
+      li {
+        padding: 0.25em 0;
+        line-height: 1.66;
+      }
     }
     ul {
       li {
@@ -96,15 +120,14 @@
       }
     }
     table {
-      max-width: 100%;
       border-collapse: collapse;
-      border: 1px solid rgba($color-darkgrey, 0.2);
+      border: 1px solid $color-lightgrey;
       th,
       td {
         padding: 0.5em 1em;
         font-size: $font-size-14px;
         line-height: 1.66;
-        border: 1px solid rgba($color-darkgrey, 0.2);
+        border: 1px solid $color-lightgrey;
       }
       th {
         text-align: center;
@@ -124,7 +147,7 @@
     blockquote {
       padding: 2em;
       margin: 2em 0;
-      border: 1px solid rgba($color-darkgrey, 0.2);
+      border: 1px solid $color-lightgrey;
     }
   }
 }

@@ -89,7 +89,10 @@ $font-size-72px: (72px / $font-size-origin * 1rem);
 html {
   font-size: $font-size-origin;
 }
-
+body,
 h1, h2, h3, h4, h5, h6 {
-  font-size: $font-size-origin;
+  font-size: $font-size-14px;
+  @include if-desktop {
+    font-size: $font-size-16px;
+  }
 }

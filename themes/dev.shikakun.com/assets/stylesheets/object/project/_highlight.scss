@@ -28,7 +28,7 @@ $highlight-purple: #cc99cc;
 .article__body {
   pre,
   code {
-    font-family: monospace;
+    font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
   }
   code {
     background: #eee;
@@ -81,7 +81,7 @@ $highlight-purple: #cc99cc;
     padding: 15px;
     .gist-file {
       border: none;
-      font-family: monospace;
+      font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
       margin: 0;
       .gist-data {
         background: none;
