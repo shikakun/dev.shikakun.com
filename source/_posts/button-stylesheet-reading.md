@@ -36,7 +36,9 @@ tags:
 
 ## Bootstrap (v3.3.5) のボタン
 
-* [サンプルボタンのページ](/examples/button-stylesheet-reading/bootstrap_v3.3.5.html)
+<a href="/examples/button-stylesheet-reading/bootstrap_v3.3.5.html" target="_blank">{% asset_img bootstrap_v3.3.5.jpg %}</a>
+
+<p align="center"><a href="/examples/button-stylesheet-reading/bootstrap_v3.3.5.html" target="_blank">サンプルボタンのページ</a></p>
 
 ```css
 .btn {
@@ -123,7 +125,9 @@ fieldset[disabled] a.btn {
 
 ## Foundation (v5.5.2) のボタン
 
-* [サンプルボタンのページ](/examples/button-stylesheet-reading/foundation_v5.5.2.html)
+<a href="/examples/button-stylesheet-reading/foundation_v5.5.2.html" target="_blank">{% asset_img foundation_v5.5.2.jpg %}</a>
+
+<p align="center"><a href="/examples/button-stylesheet-reading/foundation_v5.5.2.html" target="_blank">サンプルボタンのページ</a></p>
 
 ```css
 button, .button {
@@ -174,7 +178,9 @@ button::-moz-focus-inner {
 
 ## Pure (v0.6.0) のボタン
 
-* [サンプルボタンのページ](/examples/button-stylesheet-reading/pure_v0.6.0.html)
+<a href="/examples/button-stylesheet-reading/pure_v0.6.0.html" target="_blank">{% asset_img pure_v0.6.0.jpg %}</a>
+
+<p align="center"><a href="/examples/button-stylesheet-reading/pure_v0.6.0.html" target="_blank">サンプルボタンのページ</a></p>
 
 ```css
 .pure-button {
@@ -279,7 +285,9 @@ a.pure-button-selected {
 
 ## Bourbon (v4.2.3) + Bitters (v1.0.0) のボタン
 
-* [サンプルボタンのページ](/examples/button-stylesheet-reading/bourbon_v4.2.3.html)
+<a href="/examples/button-stylesheet-reading/bourbon_v4.2.3.html" target="_blank">{% asset_img bourbon_v4.2.3.jpg %}</a>
+
+<p align="center"><a href="/examples/button-stylesheet-reading/bourbon_v4.2.3.html" target="_blank">サンプルボタンのページ</a></p>
 
 Bourbon と Bitters は、CSS フレームワークというよりは Sass の mixin のライブラリなので、以下のような scss を書きました。
 
