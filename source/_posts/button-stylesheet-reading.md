@@ -355,6 +355,7 @@ button,
   * <code>touch-action</code>
   * <code>user-select</code>、<code>user-drag</code>
   * <code>pointer-events</code>
+  * <code>-webkit-font-smoothing</code>
   * <code>outline-offset</code>、<code>-webkit-focus-ring-color</code>…。
 
 あくまでもこれは CSS フレームワークのスタイルシートなので、たとえばコーポレートサイトや EC サイトのボタンとか読んでみてもおもしろそう。
