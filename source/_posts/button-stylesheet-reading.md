@@ -36,7 +36,7 @@ tags:
 
 ## Bootstrap (v3.3.5) のボタン
 
-* [サンプルボタンのページ](/examples/button-stylesheet/bootstrap_v3.3.5.html)
+* [サンプルボタンのページ](/examples/button-stylesheet-reading/bootstrap_v3.3.5.html)
 
 ```css
 .btn {
@@ -123,7 +123,7 @@ fieldset[disabled] a.btn {
 
 ## Foundation (v5.5.2) のボタン
 
-* [サンプルボタンのページ](/examples/button-stylesheet/foundation_v5.5.2.html)
+* [サンプルボタンのページ](/examples/button-stylesheet-reading/foundation_v5.5.2.html)
 
 ```css
 button, .button {
@@ -174,7 +174,7 @@ button::-moz-focus-inner {
 
 ## Pure (v0.6.0) のボタン
 
-* [サンプルボタンのページ](/examples/button-stylesheet/pure_v0.6.0.html)
+* [サンプルボタンのページ](/examples/button-stylesheet-reading/pure_v0.6.0.html)
 
 ```css
 .pure-button {
@@ -279,7 +279,7 @@ a.pure-button-selected {
 
 ## Bourbon (v4.2.3) + Bitters (v1.0.0) のボタン
 
-* [サンプルボタンのページ](/examples/button-stylesheet/bourbon_v4.2.3.html)
+* [サンプルボタンのページ](/examples/button-stylesheet-reading/bourbon_v4.2.3.html)
 
 Bourbon と Bitters は、CSS フレームワークというよりは Sass の mixin のライブラリなので、以下のような scss を書きました。
 
