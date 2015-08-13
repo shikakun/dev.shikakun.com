@@ -42,6 +42,7 @@
     }
   }
   .article__body {
+    word-break: break-all;
     font-size: $font-size-14px;
     @include if-desktop {
       font-size: $font-size-16px;
