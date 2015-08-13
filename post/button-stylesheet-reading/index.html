@@ -5,16 +5,27 @@
     <meta content="IE=Edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width" name="viewport">
     
-    <title>dev.shikakun.com</title>
-    <meta name="description" content="鹿">
-<meta property="og:type" content="website">
-<meta property="og:title" content="dev.shikakun.com">
-<meta property="og:url" content="http://dev.shikakun.com/index.html">
+    <title>CSS フレームワークのボタンのスタイルシート読書会 · dev.shikakun.com</title>
+    <meta name="description" content="暑い日が続きますが、いかがボタンのスタイルシートを書いてお過ごしですか？例えば、こういう html があったとして…
+&amp;lt;a class=&quot;button&quot; href=&quot;/signin&quot;&amp;gt;ログイン&amp;lt;/a&amp;gt;&amp;lt;input class=&quot;button&quot; type=&quot;submit&quot; value=&quot;検索&quot;&amp;gt;
+当たり前のように書いていくと、こんな感じのスタイルシートになるでしょ">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS フレームワークのボタンのスタイルシート読書会">
+<meta property="og:url" content="http://dev.shikakun.com/post/button-stylesheet-reading/index.html">
 <meta property="og:site_name" content="dev.shikakun.com">
-<meta property="og:description" content="鹿">
+<meta property="og:description" content="暑い日が続きますが、いかがボタンのスタイルシートを書いてお過ごしですか？例えば、こういう html があったとして…
+&amp;lt;a class=&quot;button&quot; href=&quot;/signin&quot;&amp;gt;ログイン&amp;lt;/a&amp;gt;&amp;lt;input class=&quot;button&quot; type=&quot;submit&quot; value=&quot;検索&quot;&amp;gt;
+当たり前のように書いていくと、こんな感じのスタイルシートになるでしょ">
+<meta property="og:image" content="http://dev.shikakun.com/post/button-stylesheet-reading/bootstrap_v3.3.5.jpg">
+<meta property="og:image" content="http://dev.shikakun.com/post/button-stylesheet-reading/foundation_v5.5.2.jpg">
+<meta property="og:image" content="http://dev.shikakun.com/post/button-stylesheet-reading/pure_v0.6.0.jpg">
+<meta property="og:image" content="http://dev.shikakun.com/post/button-stylesheet-reading/bourbon_v4.2.3.jpg">
+<meta property="og:updated_time" content="2015-08-13T12:07:55.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="dev.shikakun.com">
-<meta name="twitter:description" content="鹿">
+<meta name="twitter:title" content="CSS フレームワークのボタンのスタイルシート読書会">
+<meta name="twitter:description" content="暑い日が続きますが、いかがボタンのスタイルシートを書いてお過ごしですか？例えば、こういう html があったとして…
+&amp;lt;a class=&quot;button&quot; href=&quot;/signin&quot;&amp;gt;ログイン&amp;lt;/a&amp;gt;&amp;lt;input class=&quot;button&quot; type=&quot;submit&quot; value=&quot;検索&quot;&amp;gt;
+当たり前のように書いていくと、こんな感じのスタイルシートになるでしょ">
     
       <link rel="alternative" href="/atom.xml" title="dev.shikakun.com" type="application/atom+xml">
     
@@ -52,8 +63,7 @@
       </nav>
     </header>
     <div class="page">
-      
-  <article class="article" id="post-button-stylesheet-reading" itemscope itemprop="blogPost">
+      <article class="article" id="post-button-stylesheet-reading" itemscope itemprop="blogPost">
   
     <header class="article__header">
       
@@ -173,173 +183,37 @@
     </div>
   
   
-</article>
-
-
-  <article class="article" id="post-hexo-init" itemscope itemprop="blogPost">
-  
-    <header class="article__header">
-      
-  <h1 class="article__heading" itemprop="name">
-    <a href="/post/hexo-init/">Hexo でブログをつくるまで</a>
-  </h1>
-
-
-      
-  <a class="article__date" href="/post/hexo-init/">
-    <time datetime="2015-08-11T05:19:23.000Z" itemprop="datePublished">Aug 11, 2015</time>
-  </a>
-
-
-    </header>
-  
-  
-    <div class="article__body" itemprop="articleBody">
-      <img src="/post/hexo-init/capture_tips.png" alt="capture_tips.png" title="">
-<p>これまで技術的に調べたことは、<a href="https://github.com/shikakun/tips/issues" target="_blank" rel="external">GitHub の Tips 専用リポジトリ</a> に issue に書いて公開していた。Markdown で書けるのはもちろん、画像のアップロードもドラック&amp;ドロップでできるし、コメント欄もタグの絞り込みも検索も用意されているので、ブログツールとしてなかなか便利だなーと思っていたんだけど、いいねボタンとかはてなスターとかリアクションがもらえないし、フィードもわかりやすく吐けないし、デザインもいろいろいじってみたいな！と思い、よしブログを作ろうと思ったのでした。</p>
-<p>はてなブログ最高だし Tumblr という手もあったけど、この機会に前から興味があった静的サイトジェネレーターを使って GitHub Pages で公開してみようかなと思って <a href="https://staticsitegenerators.net/" target="_blank" rel="external">いろいろ調べてみると</a>、npm でインストールできる <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a> というツールが <a href="http://pepabo.com/recruit2016/shikakun" target="_blank" rel="external">現在の仕事</a> で扱ってる技術に近そうだなーと思い、あと GitHub Flavored Markdown で書けるので、いっちょ Hexo でブログを作ってみることにしました。</p>
-<h2 id="インストールする">インストールする</h2><p>とりあえず GitHub でブログ用のリポジトリを作るところからやります！</p>
-<ul>
-<li><a href="https://github.com/shikakun/dev.shikakun.com" target="_blank" rel="external">shikakun/dev.shikakun.com</a></li>
-</ul>
-<p>リポジトリを作ったら、Hexo のウェブサイトの Get started を見ながら以下のコマンドを叩いて Hexo をインストールしました。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br><span class="line">$ hexo init dev.shikakun.com</span><br><span class="line">$ <span class="built_in">cd</span> dev.shikakun.com</span><br><span class="line">$ npm install</span><br><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>これだけ！ローカルに Hexo のサーバーが立ち上がって、 <code><a href="http://0.0.0.0:4000/" target="_blank" rel="external">http://0.0.0.0:4000/</a></code> で見られるようになりました。<br>用意した GitHub のリポジトリをリモートリポジトリに登録しておきます。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git remote add origin git@github.com:shikakun/dev.shikakun.com.git</span><br></pre></td></tr></table></figure>
-<h2 id="デプロイする">デプロイする</h2><p>とりあえず GitHub Pages にデプロイするところをやります！<br><a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Hexo の Deployment のドキュメント</a> を読むと、GitHub Pages へデプロイするには <a href="https://github.com/hexojs/hexo-deployer-git" target="_blank" rel="external">hexo-deployer-git</a> という Hexo のプラグインをインストールしろとあるので、インストールします。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-<p>Hexo の設定ファイルの <code>_config.yml</code> の Deploy の項目を以下のように編集します。</p>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">deploy:&#10;  type: git&#10;  repo: git@github.com:shikakun/dev.shikakun.com.git&#10;  branch: gh-pages&#10;  message: &#34;Updated: &#123;&#123; now(&#39;YYYY-MM-DD HH:mm:ss&#39;) &#125;&#125;&#34;</span><br></pre></td></tr></table></figure>
-<p>これだけ！</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy -g</span><br></pre></td></tr></table></figure>
-<p>デプロイのコマンドを実行すると、Hexo が静的ファイルを生成したあと、<code>gh-pages</code> ブランチへ push して <code><a href="http://shikakun.github.io/dev.shikakun.com/" target="_blank" rel="external">http://shikakun.github.io/dev.shikakun.com/</a></code> で見られるようになりました。</p>
-<h2 id="独自ドメインを設定する">独自ドメインを設定する</h2><p><code><a href="http://shikakun.github.io/dev.shikakun.com/" target="_blank" rel="external">http://shikakun.github.io/dev.shikakun.com/</a></code> で見られるようにはなったけど、せっかくなので <code><a href="http://dev.shikakun.com/">http://dev.shikakun.com/</a></code> で見たい。というわけで、独自ドメインの設定をやります！</p>
-<p>まず、僕は <code>shikakun.com</code> をムームードメインで取得して管理しているため、ムームードメインの管理画面（ムームー DNS のカスタム設定画面）で以下のように入力しました。</p>
-<table><tr><th>サブドメイン</th><td>dev</td></tr><tr><th>種別</th><td>CNAME</td></tr><tr><th>内容</th><td>shikakun.github.io</td></tr></table>
-
-<p><a href="https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/" target="_blank" rel="external">GitHub Pages の独自ドメインを設定するドキュメント</a> を読むと、リポジトリに <code>CNAME</code> ってファイル名の独自ドメインを書いたファイルが置いてあれば良いみたい。<br>master ブランチのリポジトリ直下に <code>CNAME</code> ファイルを置いてしまうと Hexo のデプロイ先の <code>gh-pages</code> ブランチのファイルには含まれないため、記事のファイルを置いている <code>source</code> ディレクトリに置きます。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">echo</span> <span class="string">'dev.shikakun.com'</span> &gt; <span class="built_in">source</span>/CNAME</span><br></pre></td></tr></table></figure>
-<p>これだけ！<code>hexo deploy -g</code> でデプロイすれば、<code><a href="http://dev.shikakun.com/">http://dev.shikakun.com/</a></code> で見られるようになった！やったー！</p>
-<h2 id="フィードを生成する">フィードを生成する</h2><p>Hexo ではデフォルトテンプレートのナビゲーションに「RSS Feed」ってリンクがあるくせに、標準ではフィードを生成してくれない。ということで、フィードを生成してくれる Hexo のプラグインを追加します。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure>
-<p>これだけ！<code>hexo deploy -g</code> でデプロイすれば、<code><a href="http://dev.shikakun.com/atom.xml">http://dev.shikakun.com/atom.xml</a></code> で見られるようになった！やったー！<br>フィードに含めるエントリー数とかは <a href="https://github.com/hexojs/hexo-generator-feed#options" target="_blank" rel="external">設定ファイル</a> で設定できるらしいです。</p>
-<h2 id="いろいろ設定する">いろいろ設定する</h2><p>だんだん書くのが疲れてきたので雑になりますが、いろいろ設定しました。<br>当たり前だけど Git で差分を管理できるのがいいですね！</p>
-<ul>
-<li><a href="https://github.com/shikakun/dev.shikakun.com/pull/5/files" target="_blank" rel="external">edit config by shikakun · Pull Request #5 · shikakun/dev.shikakun.com</a></li>
-</ul>
-<p>というわけでブログできた！やった──────────！</p>
-<img src="/post/hexo-init/capture_dev.png" alt="capture_dev.png" title="">
-<p>デフォルトのテンプレートが宇宙感すごいのはなんでなのか。<a href="https://github.com/shikakun/dev.shikakun.com/pull/7" target="_blank" rel="external">自分の好きなようにカスタマイズ</a> して大満足です。</p>
-
+    <div class="share">
+      <ul class="share__list">
+        <li class="share__item share__item--twitter">
+          <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-url="http://dev.shikakun.com/post/button-stylesheet-reading/" data-text="CSS フレームワークのボタンのスタイルシート読書会" data-lang="ja">Tweet</a>
+        </li>
+        <li class="share__item share__item--facebook">
+          <div class="fb-like" data-href="http://dev.shikakun.com/post/button-stylesheet-reading/" data-layout="box_count" data-action="like" data-show-faces="false" data-share="false"></div>
+        </li>
+        <li class="share__item share__item--google-plus">
+          <g:plusone size="tall" href="http://dev.shikakun.com/post/button-stylesheet-reading/"></g:plusone>
+        </li>
+        <li class="share__item share__item--hatena-bookmark">
+          <a href="http://b.hatena.ne.jp/entry/http://dev.shikakun.com/post/button-stylesheet-reading/" class="hatena-bookmark-button" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="//b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a>
+        </li>
+      </ul>
     </div>
-  
-  
-</article>
+    
+  <div class="next-article-nav">
+    <a href="/post/hexo-init/">
+      <span class="next-article-nav__label">
+        次の記事
+      </span>
+      <span class="next-article-nav__heading">
+        Hexo でブログをつくるまで
+      </span>
+    </a>
+  </div>
 
 
-  <article class="article" id="post-styleguide-hologram" itemscope itemprop="blogPost">
-  
-    <header class="article__header">
-      
-  <h1 class="article__heading" itemprop="name">
-    <a href="/post/styleguide-hologram/">Hologram ではじめるスタイルガイド入門</a>
-  </h1>
-
-
-      
-  <a class="article__date" href="/post/styleguide-hologram/">
-    <time datetime="2015-01-19T00:50:00.000Z" itemprop="datePublished">Jan 19, 2015</time>
-  </a>
-
-
-    </header>
-  
-  
-    <div class="article__body" itemprop="articleBody">
-      <p>スタイルシートを書くのってほんとうにややこしいですね。気がついたら、どこになにが書かれているのかわからない数万行の CSS 地獄になってしまいます。</p>
-<p>CSS 地獄にならないためには、例えばボタンなら共通のボタンのスタイルシートに統一して、どのページでも同じスタイルシートでボタンを表現したほうが、効率的だし仕事も早いですよね。デザインのリニューアルだって一瞬です。さらには、デザイナーが作業しなくてもエンジニアだけでボタンを用意できてしまうという CSS 天国が待っています。</p>
-<p>CSS 天国を実現するためには、どのような共通のスタイルシートを用意しているのかまとめてあるドキュメント、「スタイルガイド」を用意しておくと便利です。べつに wiki にまとめてもいいんだけど、wiki って更新するの忘れてしまいがち。そこで、スタイルシートに書いたコメントを抽出して自動でスタイルガイドを生成してくれるっていう便利なツールを紹介したいと思います。</p>
-<p>このようなツールは GitHub も使っている <a href="http://warpspire.com/kss/" target="_blank" rel="external">KSS</a> や、デフォルトのテンプレートがかっこいい <a href="http://jacobrask.github.io/styledocco/" target="_blank" rel="external">StyleDocco</a> などいろいろありますが、ここでは <a href="http://trulia.github.io/hologram/" target="_blank" rel="external">Hologram</a> を使ってスタイルガイドを作ってみようと思います。ツールそれぞれに特徴があるので、ぜひいろいろ試してみて自分のプロジェクトに合ったものを選んでください！</p>
-<ul>
-<li><a href="https://github.com/shikakun/tips/issues/72" target="_blank" rel="external">スタイルガイドについて調べた · Issue #72 · shikakun/tips</a></li>
-</ul>
-<h2 id="Hologram_を使ってみよう">Hologram を使ってみよう</h2><p>それでは Hologram でスタイルガイドを作ってみましょう！</p>
-<p>スタイルガイドの生成を体験するために、サンプルのかんたんなプロジェクトを用意しました。</p>
-<ul>
-<li><a href="https://github.com/shikakun/styleguide" target="_blank" rel="external">https://github.com/shikakun/styleguide</a></li>
-</ul>
-<p>さっそく以下の手順で Hologram を実行してみましょう。<br>(環境は Mac の OSX、Ruby は最新のバージョンになっている前提のコマンドです！)</p>
-<ol>
-<li>ターミナルを立ち上げます。</li>
-<li><code>$ gem install hologram</code><ul>
-<li>Mac に Hologram をインストールします。</li>
-</ul>
-</li>
-<li><code>$ git clone git@github.com:shikakun/styleguide.git</code><ul>
-<li>サンプルプロジェクトを Mac にダウンロードします。</li>
-</ul>
-</li>
-<li><code>$ cd styleguide</code><ul>
-<li>サンプルプロジェクトのディレクトリへ移動します。</li>
-</ul>
-</li>
-<li><code>$ hologram hologram_files/config.yml</code><ul>
-<li>Hologram を実行します。</li>
-</ul>
-</li>
-</ol>
-<p>Hologram を実行すると、<code>app</code> ディレクトリと同じ階層に <code>styleguide</code> というディレクトリができます。このなかにあるファイルが、スタイルガイドです！</p>
-<p><code>button.html</code> をウェブブラウザで開いてみましょう。</p>
-<img src="/post/styleguide-hologram/capture.png" alt="capture.png" title="">
-<p>スタイルガイドができてるぞ!!</p>
-<h2 id="Hologram_の仕組み">Hologram の仕組み</h2><p>さきほど生成したスタイルガイドでは例としてボタンのスタイルシートについて説明していますが、この説明がどこに書かれているのかというと、ボタンのスタイルシートが書いてある CSS ファイルにコメントとして書かれています。</p>
-<p><a href="https://github.com/shikakun/styleguide/blob/master/app/stylesheets/button.css" target="_blank" rel="external"><code>app/stylesheets/button.css</code></a> には、以下のように書いてあります。</p>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*doc</span><br><span class="line">---</span><br><span class="line">title: このスタイルシートについて</span><br><span class="line">name: 0-button-outline</span><br><span class="line">category: button</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">このスタイルシートでは、ボタンのスタイルを指定しています。</span><br><span class="line"></span><br><span class="line">*/</span></span><br></pre></td></tr></table></figure>
-<p>この <code>/*doc</code> からはじまったコメントが Hologram のために書かれたコメントです。スタイルシートのコメントがすべてスタイルガイドに反映されるわけではなく、Hologram の記法に沿っていないものは無視されます。</p>
-<p>それぞれ指定してる項目の意味は以下の通りです。</p>
-<ul>
-<li><code>title:</code><ul>
-<li>スタイルガイドで見出しになる文字列です。日本語で書いても問題ありません。</li>
-</ul>
-</li>
-<li><code>name:</code><ul>
-<li>スタイルガイドで URL のアンカーになる文字列です。また、同じ name は同じスタイルの説明として解釈されるので、スタイルの説明ごとに別の name をつける必要があります。半角英数で指定するのがおすすめです。</li>
-</ul>
-</li>
-<li><code>category:</code><ul>
-<li>スタイルガイドの目次に表示されたり、ファイル名になる文字列です。半角英数で指定するのがおすすめです。</li>
-</ul>
-</li>
-</ul>
-<p>コメントは issue でいつも慣れ親しんでいる Markdown で書くことができるので便利ですね。</p>
-<h2 id="Hologram_をカスタマイズする">Hologram をカスタマイズする</h2><p>スタイルガイド自体のテンプレートは <a href="https://github.com/shikakun/styleguide/tree/master/hologram_files/templates" target="_blank" rel="external"><code>hologram_files/templates</code></a> ディレクトリに入っていて、ヘッダーとフッターのマークアップや、スタイルガイド自体のスタイルシートを編集できるようになっています。目の前の仕事から逃避したいときや、土日に予定がなさすぎてつらいときとかにプロジェクトに合ったおしゃれなデザインをしてみるのも一興です。</p>
-<p>そんな暇ないよ！って人は、モダンな Hologram のテンプレートを作って公開してる人もいるので、そのまま使うなりディレクトリ構成を参考にするなりしてみたらいかがでしょうか。</p>
-<ul>
-<li>Cortana<ul>
-<li><a href="https://github.com/Yago/Cortana" target="_blank" rel="external">https://github.com/Yago/Cortana</a></li>
-</ul>
-</li>
-</ul>
-<p>これは、CodeGrid っていう有料のメールマガジンで Hologram の使い方を紹介していたときのサンプルコード。サンプルコードは GitHub で無料で公開されています。</p>
-<ul>
-<li>Hologramでカスタムスタイルガイド<ul>
-<li><a href="https://github.com/codegrid/hologram" target="_blank" rel="external">https://github.com/codegrid/hologram</a></li>
-</ul>
-</li>
-</ul>
-<blockquote>このサンプルプロジェクトの Hologram は、実は Markdown をパースするところもカスタマイズしています。<br>詳しくは <a href="https://github.com/shikakun/styleguide/blob/master/hologram_files/markdown_renderer.rb" target="_blank" rel="external"><code>hologram_files/markdown_renderer.rb</code></a> を参照ください。<br>Hologram はカスタマイズ性が高いので、自分の好きなように表示できてめっちゃ楽しいです。</blockquote>
-
-<p>実際にスタイルガイドを書きながらスタイルシートを書いていると、いつも誰かに説明を迫られているような気がして、scss の長い入れ子を分割したり、どうしてこのように書いているのかをまめにコメントするようになって、あとから自分で見返したときもわかりやすくなって良いなと思います。</p>
-<p>あと、サンプルの html が一覧になっていることで、そのスタイルシートがうまく適用されなくて表示が崩れても見つけやすいという、テスト的な使い方もできるなーと思いました。</p>
-<p>まだ全然手探りでやってますけど、なかなかよかったので、とりいそぎご紹介でした！</p>
-
-    </div>
-  
   
 </article>
-
-
-
 
 
     </div>
@@ -351,7 +225,7 @@
           </a>
         </li>
         <li class="footer__account-list footer__account-list--contact">
-          <a href="https://github.com/shikakun/dev.shikakun.com/issues/new?labels=お問い合わせ&amp;title=dev.shikakun.com について&amp;body=内容は公開されます。ご了承ください。" target="_blank">
+          <a href="https://github.com/shikakun/dev.shikakun.com/issues/new?labels=お問い合わせ&amp;title=「CSS フレームワークのボタンのスタイルシート読書会」について&amp;body=内容は公開されます。ご了承ください。" target="_blank">
             Contact
           </a>
         </li>
