@@ -5,7 +5,7 @@
   <subtitle><![CDATA[鹿]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://dev.shikakun.com//"/>
-  <updated>2015-08-13T12:07:55.000Z</updated>
+  <updated>2015-08-14T03:01:47.000Z</updated>
   <id>http://dev.shikakun.com//</id>
   
   <author>
@@ -14,6 +14,48 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Pull request でごはんにカレーをかける]]></title>
+    <link href="http://dev.shikakun.com/post/pull-request-ascii-art/"/>
+    <id>http://dev.shikakun.com/post/pull-request-ascii-art/</id>
+    <published>2015-08-14T01:10:54.000Z</published>
+    <updated>2015-08-14T03:01:47.000Z</updated>
+    <content type="html"><![CDATA[<p>僕が働いている <a href="http://pepabo.com/recruit2016/shikakun" target="_blank" rel="external">会社</a> では、今期の目標や実績などの評価資料を Markdown で書いて、GitHub Enterprise の規定のリポジトリに pull request を送ることで管理しています（エンジニアだけでなく、デザイナーや、一部の部署ではマネージャーやディレクターも pull request で提出している一風変わった会社です）。どうしてこんなことをしているのかは <a href="http://blog.kentarok.org/entry/2014/04/27/220231" target="_blank" rel="external">CTO の記事</a> を参照いただければと思いますが、僕はデザイナーだし pull request も自己アピールの場だなと思って、コミットメッセージで絵を描くことにしました。</p>
+<ul>
+<li><a href="http://www.figlet.org/" target="_blank" rel="external">FIGlet</a></li>
+</ul>
+<p>FIGlet は文字をアスキーアートへ変換するツールです。コマンドラインで実行できるので、開発環境ごとに ssh ログインしたときに違うアスキーアートを表示させるようにしておくと、ログインしたサーバーを区別できて便利ですね。</p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">$ brew install figlet&#10;$ figlet shikakun&#10;     _     _ _         _&#10; ___| |__ (_) | ____ _| | ___   _ _ __&#10;/ __| &#39;_ \| | |/ / _` | |/ / | | | &#39;_ \&#10;\__ \ | | | |   &#60; (_| |   &#60;| |_| | | | |&#10;|___/_| |_|_|_|\_\__,_|_|\_\\__,_|_| |_|</span><br></pre></td></tr></table></figure>
+<p>さっそく僕のインターネットでの通り名の「shikakun」をアスキーアート化して、上から1行ずつ空コミットしてみました。</p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">$ git commit --allow-empty -m &#39;     _     _ _         _&#39;&#10;$ git commit --allow-empty -m &#39; ___| |__ (_) | ____ _| | ___   _ _ __&#39;&#10;$ git commit --allow-empty -m &#39;/ __| &#39;_ \| | |/ / _` | |/ / | | | &#39;_ \&#39;&#10;$ git commit --allow-empty -m &#39;\__ \ | | | |   &#60; (_| |   &#60;| |_| | | | |&#39;&#10;$ git commit --allow-empty -m &#39;|___/_| |_|_|_|\_\__,_|_|\_\\__,_|_| |_|&#39;</span><br></pre></td></tr></table></figure>
+<p>おもむろに push すると！</p>
+<img src="/post/pull-request-ascii-art/capture_commit_a.png" alt="capture_commit_a.png" title="">
+<p>あれ…</p>
+<p>残念なことに、GitHub の仕様上、コミットメッセージに半角スペースが連続すると省略されてしまうようです。これでは思うような表現ができません。</p>
+<img src="/post/pull-request-ascii-art/capture_commit_b.png" alt="capture_commit_b.png" title="">
+<p>全角スペースも試してみましたが、環境や書体によっては意図した表示にならないことがわかりました。しかし、ここでひらめきました。スペースがダメなら、空白を意味する文字を挿入すればいいじゃないか。また、思い通りの書体で表示されないなら、どの環境でも同じ見た目の絵文字で表示すればいいじゃないか！幸い GitHub はコミットメッセージに :emoji: と書くと絵文字へ置換してくれる機能があります。</p>
+<img src="/post/pull-request-ascii-art/capture_commit_c.png" alt="capture_commit_c.png" title="">
+<p>できた！</p>
+<p>FIGlet では文字2種類を指定してアスキーアートを描く機能はないので、Photoshop で 28px × 28px（GitHub の pull request の画面でコミットメッセージの幅が最大 28 絵文字ぶんのため）のカンバスを用意してドット絵を用意しました。</p>
+<img src="/post/pull-request-ascii-art/capture_photoshop.png" alt="capture_photoshop.png" title="">
+<p>完成したドット絵を見ながら、上から 1px ごとに塗られているかどうかで 0 と 1 を入力していきます…。このあたりを自動化する便利なツールないかなぁ。</p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">0000000000000111000000000000&#10;0000000000000111000000000000&#10;0001111111111111111111111110&#10;0001111111111111111111111110&#10;0001100000110000011000000000&#10;0001100000110000011000000000&#10;0001100000110000011000000000&#10;0001111111111111111111111100&#10;0001111111111111111111111100&#10;0001100000110000011000001100&#10;0001100000110000011000001100&#10;0001100000110000011000001100&#10;0001100000110000011000001100&#10;0001111111111111111111111100&#10;0001111111111111111111111100&#10;0001100000000000000000000000&#10;0001100011000000011000000000&#10;0001100011000000011000001100&#10;0001000011111110011001111110&#10;0011000011111110011111111100&#10;0011000011000000011111000000&#10;0011000011000000011000000000&#10;0011000011000000011000000010&#10;0111000011001110011000000011&#10;0110111111111110011000000011&#10;1110011111111110011111111110&#10;0010011110000000001111111110</span><br></pre></td></tr></table></figure>
+<p>アスキーアートができたら、1行ずつ絵文字に置換してコミットしていくのはめんどうなので、以下のような Rakefile を書きました。</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line"><span class="keyword">require</span> <span class="string">'rake'</span></span><br><span class="line"></span><br><span class="line"><span class="variable">@messages</span> = [</span><br><span class="line">  <span class="string">'0000000000000111000000000000'</span>,</span><br><span class="line">  <span class="string">'0000000000000111000000000000'</span>,</span><br><span class="line">  <span class="string">'0001111111111111111111111110'</span>,</span><br><span class="line">  <span class="string">'0001111111111111111111111110'</span>,</span><br><span class="line">  <span class="string">'0001100000110000011000000000'</span>,</span><br><span class="line">  <span class="string">'0001100000110000011000000000'</span>,</span><br><span class="line">  <span class="string">'0001100000110000011000000000'</span>,</span><br><span class="line">  <span class="string">'0001111111111111111111111100'</span>,</span><br><span class="line">  <span class="string">'0001111111111111111111111100'</span>,</span><br><span class="line">  <span class="string">'0001100000110000011000001100'</span>,</span><br><span class="line">  <span class="string">'0001100000110000011000001100'</span>,</span><br><span class="line">  <span class="string">'0001100000110000011000001100'</span>,</span><br><span class="line">  <span class="string">'0001100000110000011000001100'</span>,</span><br><span class="line">  <span class="string">'0001111111111111111111111100'</span>,</span><br><span class="line">  <span class="string">'0001111111111111111111111100'</span>,</span><br><span class="line">  <span class="string">'0001100000000000000000000000'</span>,</span><br><span class="line">  <span class="string">'0001100011000000011000000000'</span>,</span><br><span class="line">  <span class="string">'0001100011000000011000001100'</span>,</span><br><span class="line">  <span class="string">'0001000011111110011001111110'</span>,</span><br><span class="line">  <span class="string">'0011000011111110011111111100'</span>,</span><br><span class="line">  <span class="string">'0011000011000000011111000000'</span>,</span><br><span class="line">  <span class="string">'0011000011000000011000000000'</span>,</span><br><span class="line">  <span class="string">'0011000011000000011000000010'</span>,</span><br><span class="line">  <span class="string">'0111000011001110011000000011'</span>,</span><br><span class="line">  <span class="string">'0110111111111110011000000011'</span>,</span><br><span class="line">  <span class="string">'1110011111111110011111111110'</span>,</span><br><span class="line">  <span class="string">'0010011110000000001111111110'</span></span><br><span class="line">]</span><br><span class="line"><span class="variable">@emoji_zero</span> = <span class="string">':rice:'</span></span><br><span class="line"><span class="variable">@emoji_one</span> = <span class="string">':curry:'</span></span><br><span class="line"></span><br><span class="line">task <span class="symbol">:commit</span> <span class="keyword">do</span></span><br><span class="line">  <span class="variable">@messages</span>.each <span class="keyword">do</span> |message|</span><br><span class="line">    message.gsub!(<span class="regexp">/0/</span>, <span class="variable">@emoji_zero</span>)</span><br><span class="line">    message.gsub!(<span class="regexp">/1/</span>, <span class="variable">@emoji_one</span>)</span><br><span class="line">    <span class="string">`git commit --allow-empty -m <span class="subst">#&#123;message&#125;</span>`</span></span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line">  puts <span class="string">'commit complete successfully!'</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">task <span class="symbol">:default</span> =&gt; <span class="symbol">:commit</span></span><br></pre></td></tr></table></figure>
+<p>好きな絵文字に置換できるので、0 と 1 をごはんにカレーがかかってるかどうかで表現することにしました。</p>
+<table><tr><th>0</th><td>:rice:</td></tr><tr><th>1</th><td>:curry:</td></tr></table>
+
+<p>実行すると！</p>
+<img src="/post/pull-request-ascii-art/capture_commit_d.png" alt="capture_commit_d.png" title="">
+<p>やった〜。</p>
+<p>もちろん業務時間中にはこんなことやってませんが、こんな評価資料を提出しても「インターネットが好きで好きでたまらないという気持ちが溢れでています。」とコメントしてもらえて、楽しい会社だなぁと思いました。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>僕が働いている <a href="http://pepabo.com/recruit2016/shikakun" target="_blank" rel="external">会社</a> では、今期の目標や実績などの評価資料を Markdown で書いて、GitHub E]]>
+    </summary>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[CSS フレームワークのボタンのスタイルシート読書会]]></title>
