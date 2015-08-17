@@ -5,7 +5,7 @@
   <subtitle><![CDATA[鹿]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://dev.shikakun.com//"/>
-  <updated>2015-08-14T03:01:47.000Z</updated>
+  <updated>2015-08-17T13:39:02.000Z</updated>
   <id>http://dev.shikakun.com//</id>
   
   <author>
@@ -14,6 +14,51 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[なんにもできない僕が Sketch 3 で円を描く]]></title>
+    <link href="http://dev.shikakun.com/post/sketch-studies-making-circle/"/>
+    <id>http://dev.shikakun.com/post/sketch-studies-making-circle/</id>
+    <published>2015-08-17T10:10:30.000Z</published>
+    <updated>2015-08-17T13:39:02.000Z</updated>
+    <content type="html"><![CDATA[<p>半年前に衝動的に Sketch 3 を買ったものの、全然使い方がわからなくて、英語だし、ほったらかしていました。これではあまりにも富豪すぎるので、ちょっとずつ勉強していこうと思います。</p>
+<p>本当になんにもできないところからはじめるので、</p>
+<ul>
+<li>アートボードを用意する</li>
+<li>ガイドを引く</li>
+<li>円を描く</li>
+</ul>
+<p>というさみしい目標で臨みます。</p>
+<h2 id="アートボードを用意する">アートボードを用意する</h2><p>アートボードとは、Illustrator のそれと同じ意味の、土台というか、なんか描くときの支持体のような、ドキュメントのサイズを決めるやつのことらしいです。僕もアートボードを作りたい！</p>
+<p>まず、Sketch を起動します。よーし。</p>
+<img src="/post/sketch-studies-making-circle/capture_artboard_a.png" alt="capture_artboard_a.png" title="">
+<p>Mac の画面上のメニューバーから <code>Insert</code> &gt; <code>Artboard</code> をクリック。</p>
+<img src="/post/sketch-studies-making-circle/capture_artboard_b.png" alt="capture_artboard_b.png" title="">
+<p>Sketch のウィンドウの右にアートボードのプリセットが一覧で表示されます。<br>今回はアイコンを作りたいので、<code>Mac Icons</code> &gt; <code>512</code> をクリック。</p>
+<img src="/post/sketch-studies-making-circle/capture_artboard_c.png" alt="capture_artboard_c.png" title="">
+<p>512px × 512px のアートボードができました。</p>
+<h2 id="ガイドを引く">ガイドを引く</h2><p>上下左右の中央にガイドを引きたい！</p>
+<img src="/post/sketch-studies-making-circle/capture_guide_a.png" alt="capture_guide_a.png" title="">
+<p>512px の半分ということで、定規の上にカーソルを乗せて 256px のところでクリック。</p>
+<img src="/post/sketch-studies-making-circle/capture_guide_b.png" alt="capture_guide_b.png" title="">
+<p>ガイドが引けました！</p>
+<h2 id="円を描く">円を描く</h2><p>いよいよ円を描きたい！</p>
+<img src="/post/sketch-studies-making-circle/capture_circle_a.png" alt="capture_circle_a.png" title="">
+<p>Mac の画面上のメニューバーから <code>Insert</code> &gt; <code>Shape</code> &gt; <code>Oval</code> をクリック。</p>
+<img src="/post/sketch-studies-making-circle/capture_circle_b.png" alt="capture_circle_b.png" title="">
+<p>カーソルをドラッグして 410px × 410px の正円を描きます。</p>
+<img src="/post/sketch-studies-making-circle/capture_circle_c.png" alt="capture_circle_c.png" title="">
+<p>円が描けた！描いた円は円をドラッグして中央に揃えます。Keynote っぽい挙動で吸い付くように中央寄せできて気持ちいいですね。</p>
+<p>よーし、そろそろ帰ります。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>半年前に衝動的に Sketch 3 を買ったものの、全然使い方がわからなくて、英語だし、ほったらかしていました。これではあまりにも富豪すぎるので、ちょっとずつ勉強していこうと思います。</p>
+<p>本当になんにもできないところからはじめるので、</p>
+<ul>
+<li>]]>
+    </summary>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Pull request でごはんにカレーをかける]]></title>
