@@ -46,7 +46,7 @@ Sketch のウィンドウの右にアートボードのプリセットが一覧�
 
 ## 円を描く
 
-ドーナツみたいな、真ん中がくりぬかれている円を描きたい！
+いよいよ円を描きたい！
 
 {% asset_img capture_circle_a.png %}
 
@@ -54,7 +54,7 @@ Mac の画面上のメニューバーから <code>Insert</code> > <code>Shape</c
 
 {% asset_img capture_circle_b.png %}
 
-カーソルをドラッグして 410px × 410px の円を描きます。
+カーソルをドラッグして 410px × 410px の正円を描きます。
 
 {% asset_img capture_circle_c.png %}
 
