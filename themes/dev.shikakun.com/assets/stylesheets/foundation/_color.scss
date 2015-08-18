@@ -16,3 +16,7 @@ body {
 a {
   color: $color-link;
 }
+::selection {
+  color: $color-white;
+  background-color: $color-link;
+}
