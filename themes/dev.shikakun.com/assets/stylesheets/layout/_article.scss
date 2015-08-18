@@ -160,5 +160,11 @@
       margin: 2em 0;
       border: 1px solid $color-lightgrey;
     }
+    hr {
+      height: 0;
+      margin: 2em 0;
+      border: 0;
+      border-top: 1px solid $color-lightgrey;
+    }
   }
 }
