@@ -25,5 +25,25 @@ tags:
 ## 円をくりぬく
 
 では、さっそくきのう円を描いただけの Sketch ファイルを開きます。
+歯車を描きたいので、この円をドーナツみたいにくりぬきたいです。
 
+{% asset_img capture_substract_a.png %}
 
+円を選択して、Mac の画面上のメニューバーから <code>Edit</code> > <code>Duplicate</code> をクリック。
+
+{% asset_img capture_substract_b.png %}
+
+複製された円を選択して、80px 小さい 330px × 330px に縮小して中央に寄せます。
+
+{% asset_img capture_substract_c.png %}
+
+背面にある円を前面の円でくりぬきたいので、両方の円を選択して、Mac の画面上のメニューバーから <code>Layer</code> > <code>Combine</code> > <code>Subtract</code> をクリック。
+Combine は結合、Subtract は差し引く、という意味なのか（英語の勉強）。
+
+{% asset_img capture_substract_d.png %}
+
+くりぬけた！
+
+{% asset_img capture_substract_e.png %}
+
+ちなみに結合する前のそれぞれの円のパス情報は残ったままなので、あとでウィンドウの左の描いた要素のリストから結合タイプの指定を変更することもできるそうです。
