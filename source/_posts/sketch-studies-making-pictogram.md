@@ -14,14 +14,13 @@ tags:
 
 でも、書かれたのが2014年だったり、やっぱり電子書籍より紙の本がいいなという時代錯誤的な思いもあり、さらに調べてみると「Sketch 3の基本。」を書かれている窪木博士さんが、ベクターデータについて紹介している本で Sketch について書かれていることを知りました。
 
-* [Web制作者のためのIllustrator＆ベクターデータの教科書 マルチデバイス時代に知っておくべき新・グラフィック作成術](http://amzn.to/1TQQkGD)
+* [Web制作者のためのIllustrator＆ベクターデータの教科書 マルチデバイス時代に知っておくべき新・グラフィック作成術](http://www.amazon.co.jp/dp/4844338161)
 
 買って読んでみると、この本の Chapter 5-2 で Sketch を使って歯車のアイコンを描くというチュートリアルが載っていた！というわけで、この本で紹介されている方法に従って僕も歯車のアイコンを描いてみようと思います。
 
 {% asset_img photo_completion.jpg %}
 
-この本、Sketch のことだけ書いてあるわけではなく、Illustrator の使い方やベクターデータを最適化する考え方、ウェブで svg 画像を表示する方法やロゴ作成の仕事の進め方まで幅広く書かれていて、とても参考になりました。知ってる人は読まなくてもいいかもだけど…。この本を紹介するために生まれて初めて作成した Amazon のアフィリエイトリンクは [こちら](http://amzn.to/1TQQkGD) です。
-
+この本、Sketch のことだけ書いてあるわけではなく、Illustrator の使い方やベクターデータを最適化する考え方、ウェブで svg 画像を表示する方法やロゴ作成の仕事の進め方まで幅広く書かれていて、とても参考になりました。
 ## 円をくりぬく
 
 では、さっそくきのう円を描いただけの Sketch ファイルを開きます。
@@ -47,3 +46,87 @@ Combine は結合、Subtract は差し引く、という意味なのか（英語
 {% asset_img capture_substract_e.png %}
 
 ちなみに結合する前のそれぞれの円のパス情報は残ったままなので、あとでウィンドウの左の描いた要素のリストから結合タイプの指定を変更することもできるそうです。
+
+## スポークを描く
+
+歯車の車輪のスポーク部分（3本の線がY字になっているところ）を描きたい。
+Mac の画面上のメニューバーから <code>Insert</code> > <code>Shape</code> > <code>Rectangle</code> をクリック。
+
+{% asset_img capture_spoke_a.png %}
+
+[本](http://www.amazon.co.jp/dp/4844338161) に載ってるキャプチャ画像を見ながら、180px × 20px の長方形を描きました。
+
+この長方形を回転させながらコピーします。
+長方形を選択した状態で、Mac の画面上のメニューバーから <code>Layer</code> > <code>Paths</code> > <code>Rotate Copies</code> をクリック。
+
+{% asset_img capture_spoke_b.png %}
+
+何個コピーするか尋ねられるので、あと2個ほしいから <code>2</code> と入力します。
+
+{% asset_img capture_spoke_c.png %}
+
+コピーできた！
+ここで、コピーした長方形たちの中央にある白い丸をクリックしてガイドを引いた中央にドラッグすると…
+
+{% asset_img capture_spoke_d.png %}
+
+あっ
+
+{% asset_img capture_spoke_e.png %}
+
+すごい！Y字にできた！
+
+あとは、さっきくりぬいた円と長方形たちを結合したいので、円をくりぬいたときと同じ要領で、両方を選択して Mac の画面上のメニューバーから <code>Layer</code> > <code>Combine</code> > <code>Union</code> をクリック。
+ちなみに Union はひとつにするという意味（英語の勉強）。
+
+{% asset_img capture_spoke_f.png %}
+
+スポークが描けた！
+
+## 歯を描く
+
+歯車の歯を描きます。
+スポークと同じように、Mac の画面上のメニューバーから <code>Insert</code> > <code>Shape</code> > <code>Rectangle</code> をクリック。
+
+{% asset_img capture_teeth_a.png %}
+
+[本](http://www.amazon.co.jp/dp/4844338161) にならって、36px × 36px の正方形を描きました。
+
+{% asset_img capture_teeth_b.png %}
+
+ウィンドウ上にある <code>Edit</code> ボタンを押してパスを編集するモードに切り替えます。
+
+{% asset_img capture_teeth_c.png %}
+
+パスのポイントをドラッグして歯車の歯っぽくします。矢印キーも使えます。
+
+{% asset_img capture_teeth_d.png %}
+
+ウィンドウ右の <code>Finish Editing</code> をクリックして、編集モードから抜けます。Vim っぽい。
+
+{% asset_img capture_teeth_e.png %}
+
+ウィンドウ右の <code>Radius</code> に <code>4</code> と入力すると、4px の角丸になる！
+描いたあとで角丸の大きさを指定できるのは便利ですね。
+
+{% asset_img capture_teeth_f.png %}
+
+あとは歯を回転させながらコピーしたい！ということで、スポークと同じように Mac の画面上のメニューバーから <code>Layer</code> > <code>Paths</code> > <code>Rotate Copies</code> をクリックして合計20歯になるように <code>19</code> と入力します。
+
+{% asset_img capture_teeth_g.png %}
+
+あっ
+
+{% asset_img capture_teeth_h.png %}
+
+あっあっ
+
+{% asset_img capture_teeth_i.png %}
+
+あ───────っ
+
+{% asset_img capture_teeth_j.png %}
+
+やった─────────────────！
+
+学習の記録ということで最後めんどくさくなって省略しましたが、[こちらの本](http://www.amazon.co.jp/dp/4844338161) にはもっと詳細に書かれているので、ぜひご参照ください…！
