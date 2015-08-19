@@ -23,7 +23,7 @@ tags:
 この本、Sketch のことだけ書いてあるわけではなく、Illustrator の使い方やベクターデータを最適化する考え方、ウェブで svg 画像を表示する方法やロゴ作成の仕事の進め方まで幅広く書かれていて、とても参考になりました。
 ## 円をくりぬく
 
-では、さっそくきのう円を描いただけの Sketch ファイルを開きます。
+では、さっそく [前回](http://dev.shikakun.com/post/sketch-studies-making-circle/) 円を描いただけの Sketch ファイルを開きます。
 歯車を描きたいので、この円をドーナツみたいにくりぬきたいです。
 
 {% asset_img capture_substract_a.png %}
@@ -49,7 +49,7 @@ Combine は結合、Subtract は差し引く、という意味なのか（英語
 
 ## スポークを描く
 
-歯車の車輪のスポーク部分（3本の線がY字になっているところ）を描きたい。
+歯車の車輪のスポーク部分（3本の線が Y 字になっているところ）を描きたい。
 Mac の画面上のメニューバーから <code>Insert</code> > <code>Shape</code> > <code>Rectangle</code> をクリック。
 
 {% asset_img capture_spoke_a.png %}
@@ -74,7 +74,7 @@ Mac の画面上のメニューバーから <code>Insert</code> > <code>Shape</c
 
 {% asset_img capture_spoke_e.png %}
 
-すごい！Y字にできた！
+すごい！Y 字にできた！
 
 あとは、さっきくりぬいた円と長方形たちを結合したいので、円をくりぬいたときと同じ要領で、両方を選択して Mac の画面上のメニューバーから <code>Layer</code> > <code>Combine</code> > <code>Union</code> をクリック。
 ちなみに Union はひとつにするという意味（英語の勉強）。
