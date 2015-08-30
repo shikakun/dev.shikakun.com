@@ -5,7 +5,7 @@
   <subtitle><![CDATA[鹿]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://dev.shikakun.com//"/>
-  <updated>2015-08-17T13:39:02.000Z</updated>
+  <updated>2015-08-30T14:34:48.000Z</updated>
   <id>http://dev.shikakun.com//</id>
   
   <author>
@@ -14,6 +14,162 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[会社のイベントで仕事の話をしました]]></title>
+    <link href="http://dev.shikakun.com/post/yapc-asia-pepabo-2015/"/>
+    <id>http://dev.shikakun.com/post/yapc-asia-pepabo-2015/</id>
+    <published>2015-08-30T13:48:42.000Z</published>
+    <updated>2015-08-30T14:34:48.000Z</updated>
+    <content type="html"><![CDATA[<p><a href="https://www.youtube.com/watch?v=xrOugPYrkyI&amp;t=2h46m35s" target="_blank"><img src="/post/yapc-asia-pepabo-2015/capture_youtube.png" alt="capture_youtube.png" title=""></a></p>
+<p><a href="http://pepabo.com/news/event/201508261200" target="_blank" rel="external">第3回ペパボテックカンファレンス</a> っていう会社の技術イベントがあって、ここ1年間ぐらいやらせていただいた仕事についてお話ししました！資料だけを見てもちょっとよくわからないので、よろしければインターネットに配信してた中継映像の録画をご覧ください！</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=xrOugPYrkyI&amp;t=2h46m35s" target="_blank" rel="external">今夜、インターネットの片隅で。 〜ウェブサービス開発ちょっといい話〜</a></li>
+</ul>
+<p>もともとはエンジニア文化へのあこがれの気持ちで <a href="http://yapcasia.org/2015/talk/show/1be822d8-0f83-11e5-b022-43ec7d574c3a" target="_blank" rel="external">興味本位で YAPC にトークを応募</a> して採用されなかった話を、社内で採用されなかった人たちでイベントをやるというのにまぜてもらい、Perl とか全然関係ないのに発表する機会を得られてよかったです。ダメでもなにかにつながるので、無茶でも応募してみるものだなと思いました。</p>
+<p>反省点としては、</p>
+<ul>
+<li>「レガシーな画面」と言ってしまったりして、本当はこれまでの10年をリスペクトした上で次の10年に繋げたいという気持ちがあるのに、全体的にもうちょっと言葉を選んで話したかったです。</li>
+<li>緊張して息切れしてしまったので、次回は過呼吸にならない発表をしたいです。</li>
+</ul>
+<p>場慣れするためにも、これからも発表のチャンスがありそうだったら積極的に参加していきたいです。僕の話を聞いていただいたみなさま、会社、ありがとうございました。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><a href="https://www.youtube.com/watch?v=xrOugPYrkyI&amp;t=2h46m35s" target="_blank"><img src="/post/yapc-asia-pepabo-2015/capture_youtub]]>
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[歯車しか描けない僕が Sketch 3 で画面遷移図を描く]]></title>
+    <link href="http://dev.shikakun.com/post/sketch-studies-making-flowchart/"/>
+    <id>http://dev.shikakun.com/post/sketch-studies-making-flowchart/</id>
+    <published>2015-08-19T10:47:53.000Z</published>
+    <updated>2015-08-30T13:48:52.000Z</updated>
+    <content type="html"><![CDATA[<p>（これまでのあらすじ）半年前に衝動的に購入して放置していた Sketch 3 をちゃんと使えるようになろうと思い、本を読みながら歯車アイコンを描きました。連載第3回目です。</p>
+<ul>
+<li><a href="http://dev.shikakun.com/post/sketch-studies-making-circle/">なんにもできない僕が Sketch 3 で円を描く (第1回)</a></li>
+<li><a href="http://dev.shikakun.com/post/sketch-studies-making-pictogram/">円しか描けない僕が Sketch 3 で絵を描く (第2回)</a></li>
+</ul>
+<hr>
+<p>仕事で Photoshop を使ってスマートフォンサイトの画面遷移図を描くことがありますが、めんどうくさい。画面遷移図っていくつもの画面を同じドキュメントに載せる必要があるのでカンバスが大きくなりがちですが、大きくなればなるほど重くなってしまう。ベクターデータではそんなことないのかなと思って、きょうは Sketch 3 で画面遷移図を描いてみようと思います。</p>
+<h2 id="Mobile_Safari_のテンプレートをダウンロードする">Mobile Safari のテンプレートをダウンロードする</h2><img src="/post/sketch-studies-making-flowchart/capture_template_a.png" alt="capture_template_a.png" title="">
+<p>Sketch にはもともと iOS や Material Design のテンプレートが用意されていて、<code>File</code> &gt; <code>New From Template</code> からプロジェクトにあったものを選ぶだけで UI コンポーネントを手に入れられます！</p>
+<img src="/post/sketch-studies-making-flowchart/capture_template_b.png" alt="capture_template_b.png" title="">
+<p>すごい！ここからコピー&amp;ペーストするだけで、すぐに画面のプロトタイプが作れますね。</p>
+<p>でも、Mobile Safari のアドレスバーやタブのコンポーネントはありません。きょうはスマートフォン向けサイトの画面遷移図を描きたいので、インターネットからダウンロードしようと思います。</p>
+<p><a href="http://www.sketchappsources.com/free-source/574-mobile-safari-browser-sketch-freebie.html" target="_blank" rel="external"><img src="/post/sketch-studies-making-flowchart/capture_template_c.png" alt="capture_template_c.png" title=""></a></p>
+<p><a href="http://www.sketchappsources.com/" target="_blank" rel="external">Sketch App Sources</a> は Sketch で利用できるリソースや Tips やチュートリアルがまとまっているサイトです。無料だけでなく有料でも販売されていますが、ここで Mobile Safari.sketch っていうファイルを無料で配っているすばらしい人がいたので、ダウンロードさせていただきます。<a href="http://www.sketchappsources.com/contributor/christinechaooo" target="_blank" rel="external">Christine Chao</a> さん、ありがとう！</p>
+<ul>
+<li><a href="http://www.sketchappsources.com/free-source/574-mobile-safari-browser-sketch-freebie.html" target="_blank" rel="external">Mobile Safari UI Browser Sketch freebie - Download free resource for Sketch 3- Sketch App Sources</a></li>
+</ul>
+<p>Sketch はこんなふうにユーザー同士で便利なリソースやプラグインをオープンに配布しているエコシステムができていて、すごいですね。もちろん、ライセンスは確認するべきですが…。</p>
+<p>ダウンロードした Sketch ファイルを開くと、</p>
+<img src="/post/sketch-studies-making-flowchart/capture_template_d.png" alt="capture_template_d.png" title="">
+<p>Mobile Safari の UI コンポーネントを Sketch で再現している！すごい！<br>ページを読み込んだときとスクロールしたときの見た目が用意されているので、ページを読み込んだときのほうを選択してコピーします。</p>
+<img src="/post/sketch-studies-making-flowchart/capture_template_e.png" alt="capture_template_e.png" title="">
+<p><code>File</code> &gt; <code>New</code> で新しい Sketch のドキュメントを作って、ペーストします。</p>
+<img src="/post/sketch-studies-making-flowchart/capture_template_f.png" alt="capture_template_f.png" title="">
+<p>これで画面遷移図をつくる準備ができました！</p>
+<h2 id="Make_Gird_で繰り返しコピーする">Make Gird で繰り返しコピーする</h2><p>画面の数だけコピーしていってもいいのだけど、Sketch には繰り返しコピーする機能があるので使ってみようと思います。</p>
+<img src="/post/sketch-studies-making-flowchart/capture_copy_a.png" alt="capture_copy_a.png" title="">
+<p>コピーしたい要素を選択した状態で <code>Arrange</code> &gt; <code>Make Grid…</code> をクリック。</p>
+<img src="/post/sketch-studies-making-flowchart/capture_copy_b.png" alt="capture_copy_b.png" title="">
+<p>どれだけコピーするの？と尋ねられるので、きょうは横に5行で縦に2列にしたいので、<code>Rows</code> に <code>2</code>、<code>Columns</code> に <code>5</code> と入力します。コピーする画面と画面のあいだに書き込みをしたいので、<code>Margin</code> には <code>500px</code> と広めに指定しました。ほかの項目はちょっと英語の意味がわからなかったので <a href="http://www.amazon.co.jp/dp/4844338161" target="_blank" rel="external">本とか</a> 読んでください。</p>
+<p>Make Gird ボタンを押すと…！</p>
+<img src="/post/sketch-studies-making-flowchart/capture_copy_c.png" alt="capture_copy_c.png" title="">
+<p>うおー！コピーされた！便利だなぁ。</p>
+<h2 id="たくさんのアートボードをひとつのアートボードにまとめる">たくさんのアートボードをひとつのアートボードにまとめる</h2><p>画面と画面のあいだに遷移の意味を書き込みたいので、コピーしたアートボードをひとつにまとめるアートボードをつくります。</p>
+<img src="/post/sketch-studies-making-flowchart/capture_writing_a.png" alt="capture_writing_a.png" title="">
+<p><code>Insert</code> &gt; <code>Artboard</code> をクリック。</p>
+<img src="/post/sketch-studies-making-flowchart/capture_writing_b.png" alt="capture_writing_b.png" title="">
+<p>まとめたい画面を囲むようにドラッグして、アートボードを作ります。</p>
+<img src="/post/sketch-studies-making-flowchart/capture_writing_c.png" alt="capture_writing_c.png" title="">
+<p>あとは、このアートボードに画面遷移の説明を書いていくだけ。<br>矢印を描くときは、<code>Insert</code> &gt; <code>Shape</code> &gt; <code>Line</code> で線を引いて、ウィンドウ右の <code>Borders</code> の歯車でいろいろ設定できるみたいです。書くのに疲れて雑になってきました。</p>
+<p>よーし、これで画面遷移図を Sketch で描けるようになったぞ。次の仕事から使ってみよう！</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>（これまでのあらすじ）半年前に衝動的に購入して放置していた Sketch 3 をちゃんと使えるようになろうと思い、本を読みながら歯車アイコンを描きました。連載第3回目です。</p>
+<ul>
+<li><a href="http://dev.shikakun.com/post]]>
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[円しか描けない僕が Sketch 3 で絵を描く]]></title>
+    <link href="http://dev.shikakun.com/post/sketch-studies-making-pictogram/"/>
+    <id>http://dev.shikakun.com/post/sketch-studies-making-pictogram/</id>
+    <published>2015-08-19T01:00:00.000Z</published>
+    <updated>2015-08-30T13:48:52.000Z</updated>
+    <content type="html"><![CDATA[<p>（これまでのあらすじ）半年前に衝動的に購入して放置していた Sketch 3 をちゃんと使えるようになろうと思い、まずは <a href="http://dev.shikakun.com/post/sketch-studies-making-circle/">円を描きました</a> 。</p>
+<hr>
+<p>身の回りに Sketch に詳しい人がいなかったし、インターネットを検索しても初歩的な使い方を教えてくれるページがなかったので、本を探しました。でも、実は Sketch だけ紹介する日本語の紙の本ってまだないのでしょうか…？電子書籍では、以下の2冊があるようです。</p>
+<ul>
+<li><a href="http://creative-tweet.net/sketch-3-basics/" target="_blank" rel="external">Sketch 3の基本。</a></li>
+<li><a href="http://thoughts.protean.cc/sketch-3-book-for-beginner/" target="_blank" rel="external">Sketch 3 Book for Beginner</a></li>
+</ul>
+<p>でも、書かれたのが2014年だったり、やっぱり電子書籍より紙の本がいいなという時代錯誤的な思いもあり、さらに調べてみると「Sketch 3の基本。」を書かれている窪木博士さんが、ベクターデータについて紹介している本で Sketch について書かれていることを知りました。</p>
+<ul>
+<li><a href="http://www.amazon.co.jp/dp/4844338161" target="_blank" rel="external">Web制作者のためのIllustrator＆ベクターデータの教科書 マルチデバイス時代に知っておくべき新・グラフィック作成術</a></li>
+</ul>
+<p>買って読んでみると、この本の Chapter 5-2 で Sketch を使って歯車のアイコンを描くというチュートリアルが載っていた！というわけで、この本で紹介されている方法に従って僕も歯車のアイコンを描いてみようと思います。</p>
+<img src="/post/sketch-studies-making-pictogram/photo_completion.jpg" alt="photo_completion.jpg" title="">
+<p>この本、Sketch のことだけ書いてあるわけではなく、Illustrator の使い方やベクターデータを最適化する考え方、ウェブで svg 画像を表示する方法やロゴ作成の仕事の進め方まで幅広く書かれていて、とても参考になりました。</p>
+<h2 id="円をくりぬく">円をくりぬく</h2><p>では、さっそく <a href="http://dev.shikakun.com/post/sketch-studies-making-circle/">前回</a> 円を描いただけの Sketch ファイルを開きます。<br>歯車を描きたいので、この円をドーナツみたいにくりぬきたいです。</p>
+<img src="/post/sketch-studies-making-pictogram/capture_substract_a.png" alt="capture_substract_a.png" title="">
+<p>円を選択して、Mac の画面上のメニューバーから <code>Edit</code> &gt; <code>Duplicate</code> をクリック。</p>
+<img src="/post/sketch-studies-making-pictogram/capture_substract_b.png" alt="capture_substract_b.png" title="">
+<p>複製された円を選択して、80px 小さい 330px × 330px に縮小して中央に寄せます。</p>
+<img src="/post/sketch-studies-making-pictogram/capture_substract_c.png" alt="capture_substract_c.png" title="">
+<p>背面にある円を前面の円でくりぬきたいので、両方の円を選択して、Mac の画面上のメニューバーから <code>Layer</code> &gt; <code>Combine</code> &gt; <code>Subtract</code> をクリック。<br>Combine は結合、Subtract は差し引く、という意味なのか（英語の勉強）。</p>
+<img src="/post/sketch-studies-making-pictogram/capture_substract_d.png" alt="capture_substract_d.png" title="">
+<p>くりぬけた！</p>
+<img src="/post/sketch-studies-making-pictogram/capture_substract_e.png" alt="capture_substract_e.png" title="">
+<p>ちなみに結合する前のそれぞれの円のパス情報は残ったままなので、あとでウィンドウの左の描いた要素のリストから結合タイプの指定を変更することもできるそうです。</p>
+<h2 id="スポークを描く">スポークを描く</h2><p>歯車の車輪のスポーク部分（3本の線が Y 字になっているところ）を描きたい。<br>Mac の画面上のメニューバーから <code>Insert</code> &gt; <code>Shape</code> &gt; <code>Rectangle</code> をクリック。</p>
+<img src="/post/sketch-studies-making-pictogram/capture_spoke_a.png" alt="capture_spoke_a.png" title="">
+<p><a href="http://www.amazon.co.jp/dp/4844338161" target="_blank" rel="external">本</a> に載ってるキャプチャ画像を見ながら、180px × 20px の長方形を描きました。</p>
+<p>この長方形を回転させながらコピーします。<br>長方形を選択した状態で、Mac の画面上のメニューバーから <code>Layer</code> &gt; <code>Paths</code> &gt; <code>Rotate Copies</code> をクリック。</p>
+<img src="/post/sketch-studies-making-pictogram/capture_spoke_b.png" alt="capture_spoke_b.png" title="">
+<p>何個コピーするか尋ねられるので、あと2個ほしいから <code>2</code> と入力します。</p>
+<img src="/post/sketch-studies-making-pictogram/capture_spoke_c.png" alt="capture_spoke_c.png" title="">
+<p>コピーできた！<br>ここで、コピーした長方形たちの中央にある白い丸をクリックしてガイドを引いた中央にドラッグすると…</p>
+<img src="/post/sketch-studies-making-pictogram/capture_spoke_d.png" alt="capture_spoke_d.png" title="">
+<p>あっ</p>
+<img src="/post/sketch-studies-making-pictogram/capture_spoke_e.png" alt="capture_spoke_e.png" title="">
+<p>すごい！Y 字にできた！</p>
+<p>あとは、さっきくりぬいた円と長方形たちを結合したいので、円をくりぬいたときと同じ要領で、両方を選択して Mac の画面上のメニューバーから <code>Layer</code> &gt; <code>Combine</code> &gt; <code>Union</code> をクリック。<br>ちなみに Union はひとつにするという意味（英語の勉強）。</p>
+<img src="/post/sketch-studies-making-pictogram/capture_spoke_f.png" alt="capture_spoke_f.png" title="">
+<p>スポークが描けた！</p>
+<h2 id="歯を描く">歯を描く</h2><p>歯車の歯を描きます。<br>スポークと同じように、Mac の画面上のメニューバーから <code>Insert</code> &gt; <code>Shape</code> &gt; <code>Rectangle</code> をクリック。</p>
+<img src="/post/sketch-studies-making-pictogram/capture_teeth_a.png" alt="capture_teeth_a.png" title="">
+<p><a href="http://www.amazon.co.jp/dp/4844338161" target="_blank" rel="external">本</a> にならって、36px × 36px の正方形を描きました。</p>
+<img src="/post/sketch-studies-making-pictogram/capture_teeth_b.png" alt="capture_teeth_b.png" title="">
+<p>ウィンドウ上にある <code>Edit</code> ボタンを押してパスを編集するモードに切り替えます。</p>
+<img src="/post/sketch-studies-making-pictogram/capture_teeth_c.png" alt="capture_teeth_c.png" title="">
+<p>パスのポイントをドラッグして歯車の歯っぽくします。矢印キーも使えます。</p>
+<img src="/post/sketch-studies-making-pictogram/capture_teeth_d.png" alt="capture_teeth_d.png" title="">
+<p>ウィンドウ右の <code>Finish Editing</code> をクリックして、編集モードから抜けます。Vim っぽい。</p>
+<img src="/post/sketch-studies-making-pictogram/capture_teeth_e.png" alt="capture_teeth_e.png" title="">
+<p>ウィンドウ右の <code>Radius</code> に <code>4</code> と入力すると、4px の角丸になる！<br>描いたあとで角丸の大きさを指定できるのは便利ですね。</p>
+<img src="/post/sketch-studies-making-pictogram/capture_teeth_f.png" alt="capture_teeth_f.png" title="">
+<p>あとは歯を回転させながらコピーしたい！ということで、スポークと同じように Mac の画面上のメニューバーから <code>Layer</code> &gt; <code>Paths</code> &gt; <code>Rotate Copies</code> をクリックして合計20歯になるように <code>19</code> と入力します。</p>
+<img src="/post/sketch-studies-making-pictogram/capture_teeth_g.png" alt="capture_teeth_g.png" title="">
+<p>あっ</p>
+<img src="/post/sketch-studies-making-pictogram/capture_teeth_h.png" alt="capture_teeth_h.png" title="">
+<p>あっあっ</p>
+<img src="/post/sketch-studies-making-pictogram/capture_teeth_i.png" alt="capture_teeth_i.png" title="">
+<p>あ───────っ</p>
+<img src="/post/sketch-studies-making-pictogram/capture_teeth_j.png" alt="capture_teeth_j.png" title="">
+<p>やった─────────────────！</p>
+<p>学習の記録ということで最後めんどくさくなって省略しましたが、<a href="http://www.amazon.co.jp/dp/4844338161" target="_blank" rel="external">こちらの本</a> にはもっと詳細に書かれているので、ぜひご参照ください…！</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>（これまでのあらすじ）半年前に衝動的に購入して放置していた Sketch 3 をちゃんと使えるようになろうと思い、まずは <a href="http://dev.shikakun.com/post/sketch-studies-making-circle/">円を描きました]]>
+    </summary>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[なんにもできない僕が Sketch 3 で円を描く]]></title>
